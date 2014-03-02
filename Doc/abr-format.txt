@@ -1,0 +1,106 @@
+[2byte] abrファイルのバージョン(1,2,6があるようだ)
+/* ver6の場合 */
+[2byte] subversion(6.xのxの部分、6.1と6.2があるようだ)
+
+[1byte][1byte][1byte][1byte] "8BIM" になっていなければならない
+[1byte][1byte][1byte][1byte] 8BIMtagの名前 ヌル文字は入ってないので注意
+
+[4byte] セクションサイズ この後からファイルの末尾までのファイルサイズ
+ 以下最後までブラシデータの繰り返し
+  ｜ [4byte] ブラシサイズ ブラシデータのサイズ
+  ｜ [37byte] 不要なデータ
+  ｜ [10 or 264 byte] 不要なデータ 6.1の場合は10byte 6.2の場合は267byte
+  ｜ [4byte] ブラシの領域の上辺の値
+  ｜ [4byte] ブラシの領域の左辺の値
+  ｜ [4byte] ブラシの領域の下辺の値
+  ｜ [4byte] ブラシの領域の右辺の値
+  ｜ [2byte] ブラシのデータ深度
+  ｜ [1byte] 圧縮有りか無しか
+  /* 圧縮無しの場合 */
+    ｜ [] ブラシデータ ((depth>>3) * width * height )byte 続く
+    ｜   ・
+  /* 圧縮有りの場合 */
+    ｜ [2byte] ブラシの高さの値分だけ繰り返し i行目のデータをcscanline_len[i]とする
+    ｜   ・  
+    ｜   ・
+    以下もブラシの高さの値分だけ繰り返し。
+      ｜ [1byte] 値n cscanline_len[0]の値分だけ繰り返し。
+      ｜ [1byte] 値n 
+      ｜   ・
+      ｜ [1byte] 値n cscanline_len[1]の値分だけ繰り返し。
+      ｜   ・
+      ｜   ・
+      ｜   ・
+      ｜ [1byte] 値n cscanline_len[height-1]の値分だけ繰り返し。
+      ｜   ・
+      
+  /*デコードのソース部分*/
+  /* read compressed size foreach scanline */
+  cscanline_len = g_new0(gshort, height);
+  for (i = 0; i < height; i++)
+    cscanline_len[i] = abr_read_short(abr);
+  
+  /* unpack each scanline data */
+  for (i = 0; i < height; i++) {
+    for (j = 0; j < cscanline_len[i];) {
+      n = abr_read_char(abr);
+      j++;
+      if (n >= 128)     /* force sign */
+        n -= 256;
+      if (n < 0) {      /* copy the following char -n + 1 times */
+        if (n == -128)  /* it's a nop */
+          continue;
+        n = -n + 1;
+        ch = abr_read_char(abr);
+        j++;
+        for (c = 0; c < n; c++, data++)
+          *data = ch;
+      } else {          /* read the following n + 1 chars (no compr) */
+        for (c = 0; c < n + 1; c++, j++, data++)
+          *data = abr_read_char(abr);
+      }
+    }
+  }
+
+
+先頭から
+[2byte] abrファイルのバージョン(1,2,6があるようだ)
+/* ver1 or 2の場合 */
+[2byte] ブラシの個数
+ 以下最後までブラシデータの繰り返し
+      ｜ [2byte] ブラシタイプ 1のときcomputedブラシ 2のときsampledブラシ
+      ｜ [4byte] ブラシのサイズ
+      /*ブラシタイプ 1 computed brush*/
+      /*ブラシタイプ 2 sampled brush*/
+      ｜ [6byte] 不要なデータ
+      ｜ [4byte] 名前のサイズ
+      ｜ []
+      ｜ ・
+      ｜ ・ 名前データ 名前のサイズ分だけ
+      ｜ ・
+      ｜ []
+      ｜ [9byte] 不要なデータ
+      ｜ [4byte] ブラシの領域の上辺の値
+      ｜ [4byte] ブラシの領域の左辺の値
+      ｜ [4byte] ブラシの領域の下辺の値
+      ｜ [4byte] ブラシの領域の右辺の値
+      ｜ [4byte] ブラシのデータ深度
+      ｜ [1byte] 圧縮有りか無しか
+ 以下ver 6と同様
+  /* 圧縮無しの場合 */
+      ｜ [] ブラシデータ ((depth>>3) * width * height )byte 続く
+      ｜   ・
+  /* 圧縮有りの場合 */
+      ｜ [2byte] ブラシの高さの値分だけ繰り返し i行目のデータをcscanline_len[i]とする
+      ｜   ・  
+      ｜   ・
+    以下もブラシの高さの値分だけ繰り返し。
+        ｜ [1byte] 値n cscanline_len[0]の値分だけ繰り返し。
+        ｜ [1byte] 値n 
+        ｜   ・
+        ｜ [1byte] 値n cscanline_len[1]の値分だけ繰り返し。
+        ｜   ・
+        ｜   ・
+        ｜   ・
+        ｜ [1byte] 値n cscanline_len[height-1]の値分だけ繰り返し。
+        ｜   ・

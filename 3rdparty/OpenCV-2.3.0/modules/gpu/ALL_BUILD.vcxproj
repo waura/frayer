@@ -1,0 +1,78 @@
+﻿<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{B7F59909-BB28-4650-BA06-B44EA5715E0D}</ProjectGUID>
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/.;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include/opencv;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/gpu/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/gpu/src/cuda;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/gpu/src;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/gpu;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/gpu/../core/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/gpu/../imgproc/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/gpu/../objdetect/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/gpu/../features2d/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/gpu/../flann/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/gpu/../calib3d/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/.;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include/opencv;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/gpu/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/gpu/src/cuda;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/gpu/src;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/gpu;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/gpu/../core/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/gpu/../imgproc/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/gpu/../objdetect/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/gpu/../features2d/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/gpu/../flann/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/gpu/../calib3d/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="CMakeFiles\ALL_BUILD.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Build all projects</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/gpu/CMakeFiles/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\modules\gpu\CMakeFiles\ALL_BUILD;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Build all projects</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/gpu/CMakeFiles/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\modules\gpu\CMakeFiles\ALL_BUILD;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/gpu/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -H../.. -B../.. --check-stamp-file CMakeFiles/generate.stamp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/gpu/CMakeLists.txt;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\modules\gpu\CMakeLists.txt;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\modules\gpu\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CMakeFiles\generate.stamp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/gpu/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -H../.. -B../.. --check-stamp-file CMakeFiles/generate.stamp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/gpu/CMakeLists.txt;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\modules\gpu\CMakeLists.txt;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\modules\gpu\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CMakeFiles\generate.stamp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/gpu/opencv_gpu.vcxproj">
+      <Project>30E75D34-7A40-4D95-8DEE-6260E063DD71</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

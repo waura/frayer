@@ -1,0 +1,9 @@
+LIBRARY             TWSRC_32
+DESCRIPTION         'TWAIN_32 Sample Data Source.'
+
+CODE                PRELOAD MOVEABLE DISCARDABLE
+DATA                PRELOAD SINGLE MOVEABLE
+HEAPSIZE            5120
+
+EXPORTS
+    DS_Entry        @1

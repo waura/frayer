@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\3rdparty\OpenCV-2.3.0\include;..\3rdparty\OpenCV-2.3.0\include;..\..\3rdparty\OpenCV-2.3.0\3rdparty\include;..\3rdparty\OpenCV-2.3.0\3rdparty\include;..\..\UtilOpenCV\include;..\..\libImgEdit\include;..\UtilOpenCV\include;..\libImgEdit\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>UtilOpenCV.lib;libImgEdit.lib;zlib.lib;libjasper.lib;libjpeg.lib;libpng.lib;libtiff.lib;opencv_calib3d.lib;opencv_contrib.lib;opencv_core.lib;opencv_features2d.lib;opencv_flann.lib;opencv_highgui.lib;opencv_imgproc.lib;opencv_legacy.lib;opencv_ml.lib;opencv_objdetect.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\UtilOpenCV\$(Platform)\Release DLL;..\..\UtilOpenCV\$(Platform)\Release DLL;..\libImgEdit\$(Platform)\$(Configuration);..\..\libImgEdit\$(Platform)\$(Configuration);..\3rdparty\OpenCV-2.3.0\lib\$(Platform)\$(Configuration);..\..\3rdparty\OpenCV-2.3.0\lib\$(Platform)\$(Configuration);..\3rdparty\OpenCV-2.3.0\3rdparty\lib\$(Platform)\$(Configuration);..\..\3rdparty\OpenCV-2.3.0\3rdparty\lib\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+</Project>

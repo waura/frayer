@@ -1,0 +1,13 @@
+# Package Information for pkg-config
+
+prefix=D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/install
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir_old=${prefix}/include/opencv
+includedir_new=${prefix}/include
+
+Name: OpenCV
+Description: Open Source Computer Vision Library
+Version: 2.3.0
+Libs: -L${libdir} -lopencv_core230 -lopencv_imgproc230 -lopencv_highgui230 -lopencv_ml230 -lopencv_video230 -lopencv_features2d230 -lopencv_calib3d230 -lopencv_objdetect230 -lopencv_contrib230 -lopencv_legacy230 -lopencv_flann230
+Cflags: -I${includedir_old} -I${includedir_new}

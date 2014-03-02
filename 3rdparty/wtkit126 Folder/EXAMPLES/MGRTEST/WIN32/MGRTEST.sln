@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mgrdll", "mgrdll.vcproj", "{896997C8-ADFB-4D5A-8EBF-002D26DE6EDD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D17EF0BE-471A-46E1-810F-8475F9CD1CE2} = {D17EF0BE-471A-46E1-810F-8475F9CD1CE2}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mgrtest", "mgrtest.vcproj", "{D17EF0BE-471A-46E1-810F-8475F9CD1CE2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{896997C8-ADFB-4D5A-8EBF-002D26DE6EDD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{896997C8-ADFB-4D5A-8EBF-002D26DE6EDD}.Debug|Win32.Build.0 = Debug|Win32
+		{896997C8-ADFB-4D5A-8EBF-002D26DE6EDD}.Release|Win32.ActiveCfg = Release|Win32
+		{896997C8-ADFB-4D5A-8EBF-002D26DE6EDD}.Release|Win32.Build.0 = Release|Win32
+		{D17EF0BE-471A-46E1-810F-8475F9CD1CE2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D17EF0BE-471A-46E1-810F-8475F9CD1CE2}.Debug|Win32.Build.0 = Debug|Win32
+		{D17EF0BE-471A-46E1-810F-8475F9CD1CE2}.Release|Win32.ActiveCfg = Release|Win32
+		{D17EF0BE-471A-46E1-810F-8475F9CD1CE2}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

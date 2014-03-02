@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\arithm.cpp" />
+    <ClCompile Include="src\bilateral_filter.cpp" />
+    <ClCompile Include="src\blend.cpp" />
+    <ClCompile Include="src\brute_force_matcher.cpp" />
+    <ClCompile Include="src\calib3d.cpp" />
+    <ClCompile Include="src\cascadeclassifier.cpp" />
+    <ClCompile Include="src\color.cpp" />
+    <ClCompile Include="src\cudastream.cpp" />
+    <ClCompile Include="src\element_operations.cpp" />
+    <ClCompile Include="src\error.cpp" />
+    <ClCompile Include="src\filtering.cpp" />
+    <ClCompile Include="src\graphcuts.cpp" />
+    <ClCompile Include="src\hog.cpp" />
+    <ClCompile Include="src\imgproc_gpu.cpp" />
+    <ClCompile Include="src\initialization.cpp" />
+    <ClCompile Include="src\match_template.cpp" />
+    <ClCompile Include="src\matrix_operations.cpp" />
+    <ClCompile Include="src\matrix_reductions.cpp" />
+    <ClCompile Include="src\mssegmentation.cpp" />
+    <ClCompile Include="src\precomp.cpp" />
+    <ClCompile Include="src\speckle_filtering.cpp" />
+    <ClCompile Include="src\split_merge.cpp" />
+    <ClCompile Include="src\stereobm.cpp" />
+    <ClCompile Include="src\stereobp.cpp" />
+    <ClCompile Include="src\stereocsbp.cpp" />
+    <ClCompile Include="src\surf.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\precomp.hpp" />
+    <None Include="src\cuda\blend.cu" />
+    <None Include="src\cuda\brute_force_matcher.cu" />
+    <None Include="src\cuda\calib3d.cu" />
+    <None Include="src\cuda\color.cu" />
+    <None Include="src\cuda\element_operations.cu" />
+    <None Include="src\cuda\filters.cu" />
+    <None Include="src\cuda\hog.cu" />
+    <None Include="src\cuda\imgproc.cu" />
+    <None Include="src\cuda\match_template.cu" />
+    <None Include="src\cuda\mathfunc.cu" />
+    <None Include="src\cuda\matrix_operations.cu" />
+    <None Include="src\cuda\matrix_reductions.cu" />
+    <None Include="src\cuda\split_merge.cu" />
+    <None Include="src\cuda\stereobm.cu" />
+    <None Include="src\cuda\stereobp.cu" />
+    <None Include="src\cuda\stereocsbp.cu" />
+    <None Include="src\cuda\surf.cu" />
+    <None Include="src\cuda\internal_shared.hpp" />
+    <None Include="src\cuda\safe_call.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Include">
+      <UniqueIdentifier>{20AC3CB9-27A6-4B42-BFFC-BEE2F5EF4E9E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Device">
+      <UniqueIdentifier>{EA381680-D243-45C2-A524-B7FCCC83A9D2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="include\opencv2\gpu\devmem2d.hpp">
+      <Filter>Include</Filter>
+    </None>
+    <None Include="include\opencv2\gpu\gpu.hpp">
+      <Filter>Include</Filter>
+    </None>
+    <None Include="include\opencv2\gpu\matrix_operations.hpp">
+      <Filter>Include</Filter>
+    </None>
+    <None Include="include\opencv2\gpu\stream_accessor.hpp">
+      <Filter>Include</Filter>
+    </None>
+    <None Include="src\opencv2\gpu\device\border_interpolate.hpp">
+      <Filter>Device</Filter>
+    </None>
+    <None Include="src\opencv2\gpu\device\datamov_utils.hpp">
+      <Filter>Device</Filter>
+    </None>
+    <None Include="src\opencv2\gpu\device\dynamic_smem.hpp">
+      <Filter>Device</Filter>
+    </None>
+    <None Include="src\opencv2\gpu\device\limits_gpu.hpp">
+      <Filter>Device</Filter>
+    </None>
+    <None Include="src\opencv2\gpu\device\saturate_cast.hpp">
+      <Filter>Device</Filter>
+    </None>
+    <None Include="src\opencv2\gpu\device\transform.hpp">
+      <Filter>Device</Filter>
+    </None>
+    <None Include="src\opencv2\gpu\device\vecmath.hpp">
+      <Filter>Device</Filter>
+    </None>
+  </ItemGroup>
+</Project>

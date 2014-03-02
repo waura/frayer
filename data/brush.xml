@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<iebrush>
+  <brush_group name="プリセット">
+    <brush type="em" name="ハード円ブラシ1" radius="1">
+      <hardness val="100"/>
+      <min_radius val="0"/>
+      <min_alpha val="100"/>
+    </brush>
+    <brush type="em" name="ハード円ブラシ3" radius="3">
+      <hardness val="100"/>
+      <min_radius val="0"/>
+      <min_alpha val="100"/>
+    </brush>
+    <brush type="em" name="ハード円ブラシ7" radius="7">
+      <hardness val="100"/>
+      <min_radius val="0"/>
+      <min_alpha val="100"/>
+    </brush>
+    <brush type="em" name="ハード円ブラシ15" radius="15">
+      <hardness val="100"/>
+      <min_radius val="0"/>
+      <min_alpha val="100"/>
+    </brush>
+    <brush type="em" name="ハード円ブラシ31" radius="31">
+      <hardness val="100"/>
+      <min_radius val="0"/>
+      <min_alpha val="100"/>
+    </brush>
+    <brush type="em" name="ソフト円ブラシ1" radius="1">
+      <hardness val="0"/>
+      <min_radius val="0"/>
+      <min_alpha val="100"/>
+    </brush>
+    <brush type="em" name="ソフト円ブラシ3" radius="3">
+      <hardness val="0"/>
+      <min_radius val="0"/>
+      <min_alpha val="100"/>
+    </brush>
+    <brush type="em" name="ソフト円ブラシ7" radius="7">
+      <hardness val="0"/>
+      <min_radius val="0"/>
+      <min_alpha val="100"/>
+    </brush>
+    <brush type="em" name="ソフト円ブラシ15" radius="15">
+      <hardness val="0"/>
+      <min_radius val="0"/>
+      <min_alpha val="100"/>
+    </brush>
+    <brush type="em" name="ソフト円ブラシ31" radius="31">
+      <hardness val="0"/>
+      <min_radius val="0"/>
+      <min_alpha val="100"/>
+    </brush>
+    <brush type="em" name="ハードエアーブラシ1" radius="1">
+      <hardness val="100"/>
+      <min_radius val="50"/>
+      <min_alpha val="0"/>
+    </brush>
+    <brush type="em" name="ハードエアーブラシ3" radius="3">
+      <hardness val="100"/>
+      <min_radius val="50"/>
+      <min_alpha val="0"/>
+    </brush>
+    <brush type="em" name="ハードエアーブラシ7" radius="7">
+      <hardness val="100"/>
+      <min_radius val="50"/>
+      <min_alpha val="0"/>
+    </brush>
+    <brush type="em" name="ハードエアーブラシ15" radius="15">
+      <hardness val="100"/>
+      <min_radius val="50"/>
+      <min_alpha val="0"/>
+    </brush>
+    <brush type="em" name="ハードエアーブラシ31" radius="31">
+      <hardness val="100"/>
+      <min_radius val="50"/>
+      <min_alpha val="0"/>
+    </brush>
+    <brush type="em" name="ハードエアーブラシ63" radius="63">
+      <hardness val="100"/>
+      <min_radius val="50"/>
+      <min_alpha val="0"/>
+    </brush>
+    <brush type="em" name="ハードエアーブラシ250" radius="250">
+      <hardness val="100"/>
+      <min_radius val="50"/>
+      <min_alpha val="0"/>
+    </brush>
+    <brush type="em" name="ソフトエアーブラシ1" radius="1">
+      <hardness val="0"/>
+      <min_radius val="50"/>
+      <min_alpha val="0"/>
+    </brush>
+    <brush type="em" name="ソフトエアーブラシ3" radius="3">
+      <hardness val="0"/>
+      <min_radius val="50"/>
+      <min_alpha val="0"/>
+    </brush>
+    <brush type="em" name="ソフトエアーブラシ7" radius="7">
+      <hardness val="0"/>
+      <min_radius val="50"/>
+      <min_alpha val="0"/>
+    </brush>
+    <brush type="em" name="ソフトエアーブラシ15" radius="15">
+      <hardness val="0"/>
+      <min_radius val="50"/>
+      <min_alpha val="0"/>
+    </brush>
+    <brush type="em" name="ソフトエアーブラシ31" radius="31">
+      <hardness val="0"/>
+      <min_radius val="50"/>
+      <min_alpha val="0"/>
+    </brush>
+    <brush type="em" name="ソフトエアーブラシ63" radius="63">
+      <hardness val="0"/>
+      <min_radius val="50"/>
+      <min_alpha val="0"/>
+    </brush>
+  </brush_group>
+  <brush_group name="セット2">
+    <brush type="img" name="imgテスト">
+      <brush_img val=".\data\iebrush\test.bmp"/>
+    </brush>
+  </brush_group>
+</iebrush>

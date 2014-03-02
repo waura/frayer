@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{B7F59909-BB28-4650-BA06-B44EA5715E0D}</ProjectGUID>
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/.;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include/opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/.;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include/opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/.;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include/opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/.;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include/opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="CMakeFiles\ALL_BUILD.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Build all projects</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Build all projects</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/CMakeFiles/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/CMakeFiles/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\CMakeFiles\ALL_BUILD;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\CMakeFiles\ALL_BUILD;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Build all projects</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Build all projects</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/CMakeFiles/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/CMakeFiles/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\CMakeFiles\ALL_BUILD;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\CMakeFiles\ALL_BUILD;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -H. -B. --check-stamp-file CMakeFiles/generate.stamp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -H. -B. --check-stamp-file CMakeFiles/generate.stamp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/CMakeLists.txt;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\CMakeLists.txt;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\CMakeFiles\CMakeSystem.cmake;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\CMakeFiles\CMakeCCompiler.cmake;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\CMakeFiles\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\gcc.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-cl.cmake;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\CMakeFiles\CMakeCPlatform.cmake;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\CMakeFiles\CMakeCXXPlatform.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\cl.cmake;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\CMakeFiles\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\OpenCVPCHSupport.cmake;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\OpenCVModule.cmake;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\OpenCVFindOpenEXR.cmake;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\OpenCVFindLATEX.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPythonInterp.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPythonLibs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeFindFrameworks.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\cvconfig.h.cmake;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\OpenCVConfig.cmake.in;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\OpenCVConfig.cmake.in;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\OpenCVConfig.cmake.in;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\opencv.pc.cmake.in;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\cmake_uninstall.cmake.in;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\Package.cmake.in;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\.cpack\Package.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\InstallRequiredSystemLibraries.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CPack.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Templates\CPackConfig.cmake.in;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Templates\CPackConfig.cmake.in;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/CMakeLists.txt;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\CMakeLists.txt;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\CMakeFiles\CMakeSystem.cmake;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\CMakeFiles\CMakeCCompiler.cmake;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\CMakeFiles\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\gcc.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-cl.cmake;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\CMakeFiles\CMakeCPlatform.cmake;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\CMakeFiles\CMakeCXXPlatform.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\cl.cmake;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\CMakeFiles\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\OpenCVPCHSupport.cmake;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\OpenCVModule.cmake;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\OpenCVFindOpenEXR.cmake;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\OpenCVFindLATEX.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPythonInterp.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPythonLibs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeFindFrameworks.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\cvconfig.h.cmake;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\OpenCVConfig.cmake.in;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\OpenCVConfig.cmake.in;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\OpenCVConfig.cmake.in;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\opencv.pc.cmake.in;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\cmake_uninstall.cmake.in;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\Package.cmake.in;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\.cpack\Package.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\InstallRequiredSystemLibraries.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CPack.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Templates\CPackConfig.cmake.in;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Templates\CPackConfig.cmake.in;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CMakeFiles\generate.stamp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CMakeFiles\generate.stamp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -H. -B. --check-stamp-file CMakeFiles/generate.stamp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -H. -B. --check-stamp-file CMakeFiles/generate.stamp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/CMakeLists.txt;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\CMakeLists.txt;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\CMakeFiles\CMakeSystem.cmake;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\CMakeFiles\CMakeCCompiler.cmake;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\CMakeFiles\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\gcc.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-cl.cmake;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\CMakeFiles\CMakeCPlatform.cmake;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\CMakeFiles\CMakeCXXPlatform.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\cl.cmake;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\CMakeFiles\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\OpenCVPCHSupport.cmake;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\OpenCVModule.cmake;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\OpenCVFindOpenEXR.cmake;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\OpenCVFindLATEX.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPythonInterp.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPythonLibs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeFindFrameworks.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\cvconfig.h.cmake;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\OpenCVConfig.cmake.in;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\OpenCVConfig.cmake.in;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\OpenCVConfig.cmake.in;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\opencv.pc.cmake.in;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\cmake_uninstall.cmake.in;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\Package.cmake.in;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\.cpack\Package.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\InstallRequiredSystemLibraries.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CPack.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Templates\CPackConfig.cmake.in;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Templates\CPackConfig.cmake.in;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/CMakeLists.txt;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\CMakeLists.txt;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\CMakeFiles\CMakeSystem.cmake;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\CMakeFiles\CMakeCCompiler.cmake;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\CMakeFiles\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\gcc.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-cl.cmake;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\CMakeFiles\CMakeCPlatform.cmake;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\CMakeFiles\CMakeCXXPlatform.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\cl.cmake;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\CMakeFiles\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\OpenCVPCHSupport.cmake;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\OpenCVModule.cmake;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\OpenCVFindOpenEXR.cmake;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\OpenCVFindLATEX.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPythonInterp.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPythonLibs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeFindFrameworks.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\cvconfig.h.cmake;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\OpenCVConfig.cmake.in;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\OpenCVConfig.cmake.in;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\OpenCVConfig.cmake.in;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\opencv.pc.cmake.in;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\cmake_uninstall.cmake.in;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\Package.cmake.in;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\.cpack\Package.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\InstallRequiredSystemLibraries.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CPack.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Templates\CPackConfig.cmake.in;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Templates\CPackConfig.cmake.in;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CMakeFiles\generate.stamp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CMakeFiles\generate.stamp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/traincascade/opencv_traincascade.vcxproj">
+      <Project>A5038C70-841D-42A7-9762-E286757D4D11</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/haartraining/opencv_haartraining_engine.vcxproj">
+      <Project>A3F6AEA7-C330-42EB-99BA-C49E84586D81</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/haartraining/opencv_haartraining.vcxproj">
+      <Project>F1AB1DCE-8068-413B-BE42-671C4F25494C</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/haartraining/opencv_createsamples.vcxproj">
+      <Project>0ED12DC7-3496-4F24-99E1-062D655412DF</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/haartraining/opencv_performance.vcxproj">
+      <Project>5FE41348-B1D4-4708-8B8D-87A577E5F516</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/gpu/opencv_gpu.vcxproj">
+      <Project>30E75D34-7A40-4D95-8DEE-6260E063DD71</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/stitching/opencv_stitching.vcxproj">
+      <Project>3BA461AC-65B9-40E1-BFC3-C3E48108C6BF</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/3rdparty/zlib/zlib.vcxproj">
+      <Project>AADFE011-36C2-43EB-875E-E27F34E37A3B</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/3rdparty/libjasper/libjasper.vcxproj">
+      <Project>2DA13683-0F85-4405-9AB6-5E811FF402ED</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/3rdparty/libjpeg/libjpeg.vcxproj">
+      <Project>8AC0291E-7559-444A-9126-EA43EAEF7437</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/3rdparty/libpng/libpng.vcxproj">
+      <Project>91E20CBB-CAD4-4DA6-B9CD-587B29107F97</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/3rdparty/libtiff/libtiff.vcxproj">
+      <Project>26213907-1B47-4ACE-92C4-7D23D5502196</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/3rdparty/ffmpeg/opencv_ffmpeg.vcxproj">
+      <Project>C38B473C-5F55-4209-847B-462068ADBCD6</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/ZERO_CHECK.vcxproj">
+      <Project>A667D38E-F1F6-4386-A8EB-E7BF9A050C0F</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/calib3d/opencv_calib3d.vcxproj">
+      <Project>97B4D0D9-89B5-4FFE-8C7B-EFDA670583CF</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/core/opencv_core.vcxproj">
+      <Project>10A27054-F5C1-4AEA-A927-483DDE6BAB6B</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/features2d/opencv_features2d.vcxproj">
+      <Project>9D4B7BF6-24D4-4776-A90C-1F081CB32CB1</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/flann/opencv_flann.vcxproj">
+      <Project>23717D23-5A84-4AD2-BA66-7FE7657AAF0E</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/highgui/opencv_highgui.vcxproj">
+      <Project>F7BAE0B6-80C5-4135-B65E-BDC51D998718</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/imgproc/opencv_imgproc.vcxproj">
+      <Project>62272529-5400-4ECC-B1D3-2E0AF4EFB1D5</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/legacy/opencv_legacy.vcxproj">
+      <Project>56E62DAF-904F-4364-8159-CE60C2CED9EA</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/opencv_contrib.vcxproj">
+      <Project>DB20A793-654C-4027-81F0-6B4489B58A79</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/ml/opencv_ml.vcxproj">
+      <Project>B76BEA52-722D-45CE-BE85-A1CABB26A2CA</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/objdetect/opencv_objdetect.vcxproj">
+      <Project>412E4C51-F74F-420B-9137-2A6DFC69E91D</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/video/opencv_video.vcxproj">
+      <Project>C646A4DA-B1B7-46B3-87F8-34940A896BBF</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

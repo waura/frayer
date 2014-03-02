@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\accum.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\approx.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\canny.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\color.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\contours.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\convhull.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\corner.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cornersubpix.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\deriv.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\distransform.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\emd.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\featureselect.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\featuretree.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\filter.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\floodfill.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\geometry.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\grabcut.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\histogram.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hough.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\imgwarp.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\inpaint.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\kdtree.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\linefit.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lsh.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\matchcontours.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\moments.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\morph.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\precomp.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pyramids.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pyrsegmentation.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rotcalipers.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\samplers.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\segmentation.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shapedescr.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\smooth.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\spilltree.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\subdivision2d.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sumpixels.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tables.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\templmatch.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\thresh.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\undistort.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\opencv2\imgproc\imgproc_c.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\imgproc\types_c.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\_featuretree.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\_geom.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\_imgproc.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\_list.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Src">
+      <UniqueIdentifier>{CCFD279C-8877-4B11-8AD8-D57E72F67563}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{20AC3CB9-27A6-4B42-BFFC-BEE2F5EF4E9E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="include\opencv2\imgproc\imgproc.hpp">
+      <Filter>Include</Filter>
+    </None>
+    <None Include="src\gcgraph.hpp">
+      <Filter>Src</Filter>
+    </None>
+    <None Include="src\precomp.hpp">
+      <Filter>Src</Filter>
+    </None>
+    <None Include="src\_kdtree.hpp">
+      <Filter>Src</Filter>
+    </None>
+  </ItemGroup>
+</Project>

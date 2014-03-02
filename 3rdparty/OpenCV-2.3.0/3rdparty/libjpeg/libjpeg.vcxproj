@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{8AC0291E-7559-444A-9126-EA43EAEF7437}</ProjectGUID>
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\lib\$(PlatformName)\$(Configuration)</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\lib\$(PlatformName)\$(Configuration)</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">libjpeg.dir\$(PlatformName)\$(Configuration)</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">libjpeg.dir\$(PlatformName)\$(Configuration)</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">libjpeg</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">libjpeg</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\lib\$(PlatformName)\$(Configuration)</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\lib\$(PlatformName)\$(Configuration)</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">libjpeg.dir\$(PlatformName)\$(Configuration)</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">libjpeg.dir\$(PlatformName)\$(Configuration)</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">libjpeg</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">libjpeg</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/.;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include/opencv;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/3rdparty/libjpeg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN64,EM64T;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_DEBUG;HAVE_CVCONFIG_H;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Debug</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(OutDir)\$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/.;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include/opencv;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/3rdparty/libjpeg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/.;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include/opencv;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/3rdparty/libjpeg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/.;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include/opencv;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/3rdparty/libjpeg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_DEBUG;HAVE_CVCONFIG_H;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Debug</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(OutDir)\$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/.;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include/opencv;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/3rdparty/libjpeg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/.;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include/opencv;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/3rdparty/libjpeg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/.;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include/opencv;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/3rdparty/libjpeg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN64,EM64T;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;HAVE_CVCONFIG_H;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Release</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(OutDir)\$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/.;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include/opencv;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/3rdparty/libjpeg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/.;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include/opencv;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/3rdparty/libjpeg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/.;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include/opencv;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/3rdparty/libjpeg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;HAVE_CVCONFIG_H;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Release</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(OutDir)\$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/.;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include/opencv;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/3rdparty/libjpeg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/.;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include/opencv;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/3rdparty/libjpeg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/3rdparty/libjpeg/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/3rdparty/libjpeg/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -H../.. -B../.. --check-stamp-file CMakeFiles/generate.stamp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -H../.. -B../.. --check-stamp-file CMakeFiles/generate.stamp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/3rdparty/libjpeg/CMakeLists.txt;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\3rdparty\libjpeg\CMakeLists.txt;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\3rdparty\libjpeg\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/3rdparty/libjpeg/CMakeLists.txt;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\3rdparty\libjpeg\CMakeLists.txt;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\3rdparty\libjpeg\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CMakeFiles\generate.stamp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CMakeFiles\generate.stamp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/3rdparty/libjpeg/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/3rdparty/libjpeg/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -H../.. -B../.. --check-stamp-file CMakeFiles/generate.stamp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -H../.. -B../.. --check-stamp-file CMakeFiles/generate.stamp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/3rdparty/libjpeg/CMakeLists.txt;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\3rdparty\libjpeg\CMakeLists.txt;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\3rdparty\libjpeg\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/3rdparty/libjpeg/CMakeLists.txt;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\3rdparty\libjpeg\CMakeLists.txt;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\3rdparty\libjpeg\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CMakeFiles\generate.stamp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CMakeFiles\generate.stamp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="jcapimin.c" />
+    <ClCompile Include="jcapistd.c" />
+    <ClCompile Include="jccoefct.c" />
+    <ClCompile Include="jccolor.c" />
+    <ClCompile Include="jcdctmgr.c" />
+    <ClCompile Include="jchuff.c" />
+    <ClCompile Include="jcinit.c" />
+    <ClCompile Include="jcmainct.c" />
+    <ClCompile Include="jcmarker.c" />
+    <ClCompile Include="jcmaster.c" />
+    <ClCompile Include="jcomapi.c" />
+    <ClCompile Include="jcparam.c" />
+    <ClCompile Include="jcphuff.c" />
+    <ClCompile Include="jcprepct.c" />
+    <ClCompile Include="jcsample.c" />
+    <ClCompile Include="jctrans.c" />
+    <ClCompile Include="jdapimin.c" />
+    <ClCompile Include="jdapistd.c" />
+    <ClCompile Include="jdatadst.c" />
+    <ClCompile Include="jdatasrc.c" />
+    <ClCompile Include="jdcoefct.c" />
+    <ClCompile Include="jdcolor.c" />
+    <ClCompile Include="jddctmgr.c" />
+    <ClCompile Include="jdhuff.c" />
+    <ClCompile Include="jdinput.c" />
+    <ClCompile Include="jdmainct.c" />
+    <ClCompile Include="jdmarker.c" />
+    <ClCompile Include="jdmaster.c" />
+    <ClCompile Include="jdmerge.c" />
+    <ClCompile Include="jdphuff.c" />
+    <ClCompile Include="jdpostct.c" />
+    <ClCompile Include="jdsample.c" />
+    <ClCompile Include="jdtrans.c" />
+    <ClCompile Include="jerror.c" />
+    <ClCompile Include="jfdctflt.c" />
+    <ClCompile Include="jfdctfst.c" />
+    <ClCompile Include="jfdctint.c" />
+    <ClCompile Include="jidctflt.c" />
+    <ClCompile Include="jidctfst.c" />
+    <ClCompile Include="jidctint.c" />
+    <ClCompile Include="jidctred.c" />
+    <ClCompile Include="jmemansi.c" />
+    <ClCompile Include="jmemmgr.c" />
+    <ClCompile Include="jquant1.c" />
+    <ClCompile Include="jquant2.c" />
+    <ClCompile Include="jutils.c" />
+    <ClCompile Include="transupp.c" />
+    <ClInclude Include="jchuff.h" />
+    <ClInclude Include="jconfig.h" />
+    <ClInclude Include="jdct.h" />
+    <ClInclude Include="jdhuff.h" />
+    <ClInclude Include="jerror.h" />
+    <ClInclude Include="jinclude.h" />
+    <ClInclude Include="jmemsys.h" />
+    <ClInclude Include="jmorecfg.h" />
+    <ClInclude Include="jpegint.h" />
+    <ClInclude Include="jpeglib.h" />
+    <ClInclude Include="jversion.h" />
+    <ClInclude Include="transupp.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/ZERO_CHECK.vcxproj">
+      <Project>A667D38E-F1F6-4386-A8EB-E7BF9A050C0F</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="google-glog">
+</Property><Property Name="ソリューション ファイル" Value="D:\Documents\Visual Studio 2008\Projects\frayer\3rdparty\glog-0.3.1\google-glog.sln">
+</Property><Property Name="ユーザー オプション ファイル" Value="D:\Documents\Visual Studio 2008\Projects\frayer\3rdparty\glog-0.3.1\google-glog.suo">
+</Property><Property Name="Date" Value="2011年1月21日">
+</Property><Property Name="Time" Value="1:15">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="google-glog.sln" Description="ファイルは正常に D:\Documents\Visual Studio 2008\Projects\frayer\3rdparty\glog-0.3.1\google-glog.sln.old としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="" Source="google-glog.suo" Description="ファイルは正常に D:\Documents\Visual Studio 2008\Projects\frayer\3rdparty\glog-0.3.1\google-glog.suo.old としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="libglog" Source="vsprojects\libglog\libglog.vcproj" Description="Converting project file 'D:\Documents\Visual Studio 2008\Projects\frayer\3rdparty\glog-0.3.1\vsprojects\libglog\libglog.vcproj'.">
+</Event><Event ErrorLevel="1" Project="libglog" Source="vsprojects\libglog\libglog.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="libglog" Source="vsprojects\libglog\libglog.vcproj" Description="Done converting to new project file 'D:\Documents\Visual Studio 2008\Projects\frayer\3rdparty\glog-0.3.1\vsprojects\libglog\libglog.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="libglog" Source="vsprojects\libglog\libglog.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="logging_unittest" Source="vsprojects\logging_unittest\logging_unittest.vcproj" Description="Converting project file 'D:\Documents\Visual Studio 2008\Projects\frayer\3rdparty\glog-0.3.1\vsprojects\logging_unittest\logging_unittest.vcproj'.">
+</Event><Event ErrorLevel="1" Project="logging_unittest" Source="vsprojects\logging_unittest\logging_unittest.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="logging_unittest" Source="vsprojects\logging_unittest\logging_unittest.vcproj" Description="Done converting to new project file 'D:\Documents\Visual Studio 2008\Projects\frayer\3rdparty\glog-0.3.1\vsprojects\logging_unittest\logging_unittest.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="logging_unittest" Source="vsprojects\logging_unittest\logging_unittest.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="libglog_static" Source="vsprojects\libglog_static\libglog_static.vcproj" Description="Converting project file 'D:\Documents\Visual Studio 2008\Projects\frayer\3rdparty\glog-0.3.1\vsprojects\libglog_static\libglog_static.vcproj'.">
+</Event><Event ErrorLevel="1" Project="libglog_static" Source="vsprojects\libglog_static\libglog_static.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="libglog_static" Source="vsprojects\libglog_static\libglog_static.vcproj" Description="Done converting to new project file 'D:\Documents\Visual Studio 2008\Projects\frayer\3rdparty\glog-0.3.1\vsprojects\libglog_static\libglog_static.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="libglog_static" Source="vsprojects\libglog_static\libglog_static.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="logging_unittest_static" Source="vsprojects\logging_unittest_static\logging_unittest_static.vcproj" Description="Converting project file 'D:\Documents\Visual Studio 2008\Projects\frayer\3rdparty\glog-0.3.1\vsprojects\logging_unittest_static\logging_unittest_static.vcproj'.">
+</Event><Event ErrorLevel="1" Project="logging_unittest_static" Source="vsprojects\logging_unittest_static\logging_unittest_static.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="logging_unittest_static" Source="vsprojects\logging_unittest_static\logging_unittest_static.vcproj" Description="Done converting to new project file 'D:\Documents\Visual Studio 2008\Projects\frayer\3rdparty\glog-0.3.1\vsprojects\logging_unittest_static\logging_unittest_static.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="logging_unittest_static" Source="vsprojects\logging_unittest_static\logging_unittest_static.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="google-glog.sln" Description="ソリューションは正常に変換されました">
+</Event><Event ErrorLevel="3" Project="" Source="google-glog.sln" Description="Converted">
+</Event></UpgradeLog>

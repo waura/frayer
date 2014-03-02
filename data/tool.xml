@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ietool>
+  <tool_group name="movelayer">
+    <tool path=".\data\tool_dll\MoveLayer.dll" />
+  </tool_group>
+
+  <tool_group name="ImageSlecter">
+    <tool path=".\data\tool_dll\RectImgSelecter.dll" />
+    <tool path=".\data\tool_dll\EllipseImgSelecter.dll" />
+    <tool path=".\data\tool_dll\PenSelecter.dll" />
+    <tool path=".\data\tool_dll\EraserSelecter.dll" />
+    <tool path=".\data\tool_dll\PolygonSelecter.dll" />
+    <tool path=".\data\tool_dll\LassoSelecter.dll" />    
+  </tool_group>
+
+  <tool_group name="brush">
+    <tool path=".\data\tool_dll\NormalBrushDraw.dll" />
+    <tool path=".\data\tool_dll\PencilDraw.dll" />
+    <tool path=".\data\tool_dll\WaterColorBrushDraw.dll" />    
+  </tool_group>
+
+  <tool_group name="eraser">
+    <tool path=".\data\tool_dll\Eraser.dll" />    
+  </tool_group>
+
+  <tool_group name="spoit">
+    <tool path=".\data\tool_dll\SpoitTool.dll" />    
+  </tool_group>
+
+  <tool_group name="display">
+    <tool path=".\data\tool_dll\ViewParallelTrans.dll" />    
+    <tool path=".\data\tool_dll\ViewRot.dll" />
+  </tool_group>
+</ietool>

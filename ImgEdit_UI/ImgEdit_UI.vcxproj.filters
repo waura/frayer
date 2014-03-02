@@ -1,0 +1,752 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル\new_layer_btn">
+      <UniqueIdentifier>{36ae6ccf-fb0e-4959-8ae2-5aca2bf9e872}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル\delete_layer_btn">
+      <UniqueIdentifier>{95a34d9b-86f5-4f40-86bb-2b12011869a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル\left_btn">
+      <UniqueIdentifier>{98cb762c-55d7-484a-a5c4-3e68fe488539}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル\right_btn">
+      <UniqueIdentifier>{f7ab9b3b-3af7-46c8-8ccb-e1dc87e8c711}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル\new_layer_group_btn">
+      <UniqueIdentifier>{391b03f0-9e76-4f8c-ad01-a25cde4ad559}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル\delete_palette_color_btn">
+      <UniqueIdentifier>{a039ac28-a506-421b-8921-ba86714c731d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル\new_palette_color_btn">
+      <UniqueIdentifier>{b5c3f2e3-2ab1-4a70-ab87-8380b61df86f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DockableWindow">
+      <UniqueIdentifier>{0ef25b65-0ef6-4d7d-96cc-a66a2c93de05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DockableWindow\LayerWnd">
+      <UniqueIdentifier>{5ec8a9d1-114d-4ae6-937f-191847662cde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DockableWindow\LayerWnd\header">
+      <UniqueIdentifier>{181f32f5-1632-4ca1-a565-14e5948ff69d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DockableWindow\LayerWnd\source">
+      <UniqueIdentifier>{94577e26-309f-4383-9e7c-91e1bf030c5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DockableWindow\BrushSelectWnd">
+      <UniqueIdentifier>{ddfcede3-f3f9-4b71-b7ca-88c650193a50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DockableWindow\BrushSelectWnd\header">
+      <UniqueIdentifier>{232adee1-b288-44cc-8c5e-bfedb2dce6de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DockableWindow\BrushSelectWnd\source">
+      <UniqueIdentifier>{989c8147-8630-45a4-bae5-41f914008dce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DockableWindow\ToolWnd">
+      <UniqueIdentifier>{28c1bfb7-4654-45b9-9f07-28f824dd0360}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DockableWindow\ToolWnd\header">
+      <UniqueIdentifier>{04c3b4c5-b09a-4fa0-bdaf-73a53f3875a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DockableWindow\ToolWnd\source">
+      <UniqueIdentifier>{d97574ba-0792-46a9-af3b-40304095adf6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DockableWindow\EffectTreeWnd">
+      <UniqueIdentifier>{93dafb4c-fd96-4efe-bd99-07ffe5b244b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DockableWindow\EffectTreeWnd\source">
+      <UniqueIdentifier>{49761b83-8650-4d7a-b22b-cbca05090d5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DockableWindow\EffectTreeWnd\header">
+      <UniqueIdentifier>{c7f1b6bf-c313-40f4-8d25-68728154bc42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DockableWindow\NavigatorWnd">
+      <UniqueIdentifier>{d4d816cb-56e8-4614-b9cf-c0a42216e178}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DockableWindow\NavigatorWnd\source">
+      <UniqueIdentifier>{7cac7082-d4f3-4fbf-96d9-c476623f4332}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DockableWindow\NavigatorWnd\header">
+      <UniqueIdentifier>{1eec50d8-7a8b-4d93-b237-268f227d2fa4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DockableWindow\ToolEditWnd">
+      <UniqueIdentifier>{0eef8b67-328f-44fc-96a8-51c010ca654f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DockableWindow\ToolEditWnd\header">
+      <UniqueIdentifier>{1ce09408-d3eb-4c37-8427-dd55314c5a2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DockableWindow\ToolEditWnd\source">
+      <UniqueIdentifier>{b1d55546-3cfe-4540-9e10-4cc33fc76f64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DockableWindow\HistoryWnd">
+      <UniqueIdentifier>{fa1862c5-129a-4449-8f91-a2fe0c91a7b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DockableWindow\HistoryWnd\header">
+      <UniqueIdentifier>{ee6efb76-305f-45fd-b51c-1fc36e4693e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DockableWindow\HistoryWnd\source">
+      <UniqueIdentifier>{0a4ca518-2c73-4163-a7f7-5ccfce7ad56e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DockableWindow\MaskWnd">
+      <UniqueIdentifier>{d9eb7a40-8516-4872-aa4c-8dfd35814e5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DockableWindow\MaskWnd\header">
+      <UniqueIdentifier>{d842cc92-4540-4ae4-9141-67749d75123a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DockableWindow\MaskWnd\source">
+      <UniqueIdentifier>{b5b5703e-3c94-45be-a5bd-edb983e2b610}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DockableWindow\PaletteWnd">
+      <UniqueIdentifier>{a3a60056-21a8-4188-974c-afe55d6b4a5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DockableWindow\PaletteWnd\header">
+      <UniqueIdentifier>{02387491-26d6-462e-a4e1-1ab0543177c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DockableWindow\PaletteWnd\source">
+      <UniqueIdentifier>{02d16c46-985a-44bc-8815-5a523a403d32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DockableWindow\ColorSelectWnd">
+      <UniqueIdentifier>{03f482fc-e763-4de9-b989-1b86a11a30a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DockableWindow\ColorSelectWnd\RGBSliderWnd">
+      <UniqueIdentifier>{6462ff75-798a-4d8c-96ce-81b4ac824a11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DockableWindow\ColorSelectWnd\RGBSliderWnd\header">
+      <UniqueIdentifier>{e6178cc7-ff61-4ab7-b0c5-f8231e3e62a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DockableWindow\ColorSelectWnd\RGBSliderWnd\source">
+      <UniqueIdentifier>{7c0c6e84-9d78-4161-bdd0-e3b6d1cf52b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DockableWindow\ColorSelectWnd\HSVCircleWnd">
+      <UniqueIdentifier>{4829dad4-1be6-4d45-bf81-446070fbb1cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DockableWindow\ColorSelectWnd\HSVCircleWnd\source">
+      <UniqueIdentifier>{67d5bbc6-0c94-4263-8561-0a2b5baa52cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DockableWindow\ColorSelectWnd\HSVCircleWnd\header">
+      <UniqueIdentifier>{c2254c86-8826-4785-9181-e8498b72c4a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{17787eea-3f24-49ce-a262-927758198848}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common\src">
+      <UniqueIdentifier>{86fea10c-1182-4355-9de5-8929a3e4dec2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common\include">
+      <UniqueIdentifier>{8693cb77-bb30-4de9-b8fa-749a878ce423}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BrushPopup">
+      <UniqueIdentifier>{f5b9d192-3519-4d06-953f-ed0aa659d558}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dialog">
+      <UniqueIdentifier>{aa2af3de-166d-45ad-b383-295ce6209014}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dialog\src">
+      <UniqueIdentifier>{3cd826f7-e816-469d-aee4-5f575c0a3457}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dialog\header">
+      <UniqueIdentifier>{a10dc405-6c42-4905-bcce-3e55220f543b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dialog\config">
+      <UniqueIdentifier>{51fa497c-ac23-4ac9-9227-93396ecbce99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dialog\config\source">
+      <UniqueIdentifier>{7001947e-e981-415d-9fff-2ed4419c6980}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dialog\config\haeder">
+      <UniqueIdentifier>{9ea0479b-837b-4d47-ac78-8b5aa71687e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dialog\BrushEdit">
+      <UniqueIdentifier>{5a2e22a1-23e1-4e2b-a8ab-eeaaf10cb9cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dialog\BrushEdit\header">
+      <UniqueIdentifier>{ee049f40-bfde-4469-86d8-9c26eb6ec113}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dialog\BrushEdit\src">
+      <UniqueIdentifier>{8017cc56-471d-42e1-8993-d6c8b47ea2c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainWindow">
+      <UniqueIdentifier>{31f896ea-c4da-41cd-a184-7e929c0cf650}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainWindow\src">
+      <UniqueIdentifier>{1dd12b03-3a7d-408b-88fa-6c34cfe6f7ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainWindow\header">
+      <UniqueIdentifier>{02cd8f8c-4c97-4a1e-9d16-030195407cc3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ImgEdit_UI\FPSCounter.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\IEBezierCurve.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\LoadFromTWAIN.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\stdafx.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\LayerAlphaEdit.cpp">
+      <Filter>DockableWindow\LayerWnd\source</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\LayerCtrl.cpp">
+      <Filter>DockableWindow\LayerWnd\source</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\LayerFrame.cpp">
+      <Filter>DockableWindow\LayerWnd\source</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\LayerGroupPanel.cpp">
+      <Filter>DockableWindow\LayerWnd\source</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\LayerLockState.cpp">
+      <Filter>DockableWindow\LayerWnd\source</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\LayerNameEdit.cpp">
+      <Filter>DockableWindow\LayerWnd\source</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\LayerPanel.cpp">
+      <Filter>DockableWindow\LayerWnd\source</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\LayerWnd.cpp">
+      <Filter>DockableWindow\LayerWnd\source</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\BrushPanel.cpp">
+      <Filter>DockableWindow\BrushSelectWnd\source</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\BrushPreviewFrame.cpp">
+      <Filter>DockableWindow\BrushSelectWnd\source</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\BrushSelectFrame.cpp">
+      <Filter>DockableWindow\BrushSelectWnd\source</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\BrushSelectWnd.cpp">
+      <Filter>DockableWindow\BrushSelectWnd\source</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\ToolButton.cpp">
+      <Filter>DockableWindow\ToolWnd\source</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\ToolFrame.cpp">
+      <Filter>DockableWindow\ToolWnd\source</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\ToolPopupPanel.cpp">
+      <Filter>DockableWindow\ToolWnd\source</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\ToolWnd.cpp">
+      <Filter>DockableWindow\ToolWnd\source</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\EffectTreeWnd.cpp">
+      <Filter>DockableWindow\EffectTreeWnd\source</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\FileSizeScroll.cpp">
+      <Filter>DockableWindow\NavigatorWnd\source</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\NavigatorWnd.cpp">
+      <Filter>DockableWindow\NavigatorWnd\source</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\PreviewFrame.cpp">
+      <Filter>DockableWindow\NavigatorWnd\source</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\ToolEditFrame.cpp">
+      <Filter>DockableWindow\ToolEditWnd\source</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\ToolEditWnd.cpp">
+      <Filter>DockableWindow\ToolEditWnd\source</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\HistoryFrame.cpp">
+      <Filter>DockableWindow\HistoryWnd\source</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\HistoryWnd.cpp">
+      <Filter>DockableWindow\HistoryWnd\source</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\MaskCtrl.cpp">
+      <Filter>DockableWindow\MaskWnd\source</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\MaskFrame.cpp">
+      <Filter>DockableWindow\MaskWnd\source</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\MaskPanel.cpp">
+      <Filter>DockableWindow\MaskWnd\source</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\MaskWnd.cpp">
+      <Filter>DockableWindow\MaskWnd\source</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\PaletteCtrlPane.cpp">
+      <Filter>DockableWindow\PaletteWnd\source</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\PaletteFrame.cpp">
+      <Filter>DockableWindow\PaletteWnd\source</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\PaletteWnd.cpp">
+      <Filter>DockableWindow\PaletteWnd\source</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\RGBSliderFrame.cpp">
+      <Filter>DockableWindow\ColorSelectWnd\RGBSliderWnd\source</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\RGBSliderWnd.cpp">
+      <Filter>DockableWindow\ColorSelectWnd\RGBSliderWnd\source</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\HSVCircleFrame.cpp">
+      <Filter>DockableWindow\ColorSelectWnd\HSVCircleWnd\source</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\HSVCircleWnd.cpp">
+      <Filter>DockableWindow\ColorSelectWnd\HSVCircleWnd\source</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\EditSliderCtrl.cpp">
+      <Filter>common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\HoverBitmapButton.cpp">
+      <Filter>common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\LabelComboBox.cpp">
+      <Filter>common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\ScrollWnd.cpp">
+      <Filter>common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\BrushPopupWnd.cpp">
+      <Filter>BrushPopup</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\CreateNewFileDialog.cpp">
+      <Filter>dialog\src</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\IE_EffectEditDialog.cpp">
+      <Filter>dialog\src</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\LayerStyleDialog.cpp">
+      <Filter>dialog\src</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\NewPaletteColorDialog.cpp">
+      <Filter>dialog\src</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\IEConfig_Environment.cpp">
+      <Filter>dialog\config\source</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\IEConfig_InputRevise.cpp">
+      <Filter>dialog\config\source</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\IEConfig_Shortcut.cpp">
+      <Filter>dialog\config\source</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\IEConfig_ToolShift.cpp">
+      <Filter>dialog\config\source</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\IEConfigDialog.cpp">
+      <Filter>dialog\config\source</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\BrushBaseParamTabDialog.cpp">
+      <Filter>dialog\BrushEdit\src</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\IEEMBrushEditDialog.cpp">
+      <Filter>dialog\BrushEdit\src</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\ChildFrm.cpp">
+      <Filter>MainWindow\src</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\ImgEdit_UI.cpp">
+      <Filter>MainWindow\src</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\ImgEdit_UIDoc.cpp">
+      <Filter>MainWindow\src</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\ImgEdit_UIView.cpp">
+      <Filter>MainWindow\src</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\InputPointDevice.cpp">
+      <Filter>MainWindow\src</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\MainFrm.cpp">
+      <Filter>MainWindow\src</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\ViewCtrlPane.cpp">
+      <Filter>DockableWindow\NavigatorWnd\source</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\BrushTextureParamTabDialog.cpp">
+      <Filter>dialog\BrushEdit\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ImgEdit_UI\FPSCounter.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\IEBezierCurve.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\LoadFromTWAIN.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\Resource.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="resource1.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\stdafx.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\targetver.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\LayerAlphaEdit.h">
+      <Filter>DockableWindow\LayerWnd\header</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\LayerCtrl.h">
+      <Filter>DockableWindow\LayerWnd\header</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\LayerFrame.h">
+      <Filter>DockableWindow\LayerWnd\header</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\LayerGroupPanel.h">
+      <Filter>DockableWindow\LayerWnd\header</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\LayerLockState.h">
+      <Filter>DockableWindow\LayerWnd\header</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\LayerNameEdit.h">
+      <Filter>DockableWindow\LayerWnd\header</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\LayerPanel.h">
+      <Filter>DockableWindow\LayerWnd\header</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\LayerWnd.h">
+      <Filter>DockableWindow\LayerWnd\header</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\BrushPanel.h">
+      <Filter>DockableWindow\BrushSelectWnd\header</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\BrushPreviewFrame.h">
+      <Filter>DockableWindow\BrushSelectWnd\header</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\BrushSelectFrame.h">
+      <Filter>DockableWindow\BrushSelectWnd\header</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\BrushSelectWnd.h">
+      <Filter>DockableWindow\BrushSelectWnd\header</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\ToolButton.h">
+      <Filter>DockableWindow\ToolWnd\header</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\ToolFrame.h">
+      <Filter>DockableWindow\ToolWnd\header</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\ToolPopupPanel.h">
+      <Filter>DockableWindow\ToolWnd\header</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\ToolWnd.h">
+      <Filter>DockableWindow\ToolWnd\header</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\EffectTreeWnd.h">
+      <Filter>DockableWindow\EffectTreeWnd\header</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\FileSizeScroll.h">
+      <Filter>DockableWindow\NavigatorWnd\header</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\NavigatorWnd.h">
+      <Filter>DockableWindow\NavigatorWnd\header</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\PreviewFrame.h">
+      <Filter>DockableWindow\NavigatorWnd\header</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\ToolEditFrame.h">
+      <Filter>DockableWindow\ToolEditWnd\header</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\ToolEditWnd.h">
+      <Filter>DockableWindow\ToolEditWnd\header</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\HistoryFrame.h">
+      <Filter>DockableWindow\HistoryWnd\header</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\HistoryWnd.h">
+      <Filter>DockableWindow\HistoryWnd\header</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\MaskCtrl.h">
+      <Filter>DockableWindow\MaskWnd\header</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\MaskFrame.h">
+      <Filter>DockableWindow\MaskWnd\header</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\MaskPanel.h">
+      <Filter>DockableWindow\MaskWnd\header</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\MaskWnd.h">
+      <Filter>DockableWindow\MaskWnd\header</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\PaletteCtrlPane.h">
+      <Filter>DockableWindow\PaletteWnd\header</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\PaletteFrame.h">
+      <Filter>DockableWindow\PaletteWnd\header</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\PaletteWnd.h">
+      <Filter>DockableWindow\PaletteWnd\header</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\RGBSliderFrame.h">
+      <Filter>DockableWindow\ColorSelectWnd\RGBSliderWnd\header</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\RGBSliderWnd.h">
+      <Filter>DockableWindow\ColorSelectWnd\RGBSliderWnd\header</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\HSVCircleFrame.h">
+      <Filter>DockableWindow\ColorSelectWnd\HSVCircleWnd\header</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\HSVCircleWnd.h">
+      <Filter>DockableWindow\ColorSelectWnd\HSVCircleWnd\header</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\EditSliderCtrl.h">
+      <Filter>common\include</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\FileDialogExt.h">
+      <Filter>common\include</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\HoverBitmapButton.h">
+      <Filter>common\include</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\LabelComboBox.h">
+      <Filter>common\include</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\ScrollWnd.h">
+      <Filter>common\include</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\BrushPopupWnd.h">
+      <Filter>BrushPopup</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\CreateNewFileDialog.h">
+      <Filter>dialog\header</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\IE_EffectEditDialog.h">
+      <Filter>dialog\header</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\LayerStyleDialog.h">
+      <Filter>dialog\header</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\NewPaletteColorDialog.h">
+      <Filter>dialog\header</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\IEConfig_Environment.h">
+      <Filter>dialog\config\haeder</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\IEConfig_InputRevise.h">
+      <Filter>dialog\config\haeder</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\IEConfig_Shortcut.h">
+      <Filter>dialog\config\haeder</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\IEConfig_ToolShift.h">
+      <Filter>dialog\config\haeder</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\IEConfigDialog.h">
+      <Filter>dialog\config\haeder</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\IIEConfig_DialogComponent.h">
+      <Filter>dialog\config\haeder</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\BrushBaseParamTabDialog.h">
+      <Filter>dialog\BrushEdit\header</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\IEEMBrushEditDialog.h">
+      <Filter>dialog\BrushEdit\header</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\ChildFrm.h">
+      <Filter>MainWindow\header</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\ImgEdit_UI.h">
+      <Filter>MainWindow\header</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\ImgEdit_UIDoc.h">
+      <Filter>MainWindow\header</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\ImgEdit_UIView.h">
+      <Filter>MainWindow\header</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\InputPointDevice.h">
+      <Filter>MainWindow\header</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\MainFrm.h">
+      <Filter>MainWindow\header</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\ViewCtrlPane.h">
+      <Filter>DockableWindow\NavigatorWnd\header</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgEdit_UI\BrushTextureParamTabDialog.h">
+      <Filter>dialog\BrushEdit\header</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resorce\layer_group_panel\close_layer_group.bmp">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="resorce\eye18x18.bmp">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="ImgEdit_UI\res\ImgEdit_UI.ico">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="ImgEdit_UI\res\ImgEdit_UIDoc.ico">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="resorce\lock_layer_alpha\lock_layer_alpha_btn_a.bmp">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="resorce\lock_layer_alpha\lock_layer_alpha_btn_b.bmp">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="resorce\lock_layer_alpha\lock_layer_alpha_btn_c.bmp">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="resorce\neye18x18.bmp">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="resorce\layer_group_panel\open_layer_group.bmp">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="resorce\toggle_color_circle_btn\toggle_color_circle_btn_a.bmp">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="resorce\toggle_color_circle_btn\toggle_color_circle_btn_b.bmp">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="resorce\toggle_color_circle_btn\toggle_color_circle_btn_c.bmp">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="resorce\toggle_color_slider_btn\toggle_color_slider_btn_a.bmp">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="resorce\toggle_color_slider_btn\toggle_color_slider_btn_b.bmp">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="resorce\toggle_color_slider_btn\toggle_color_slider_btn_c.bmp">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="ImgEdit_UI\res\Toolbar.bmp">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="ImgEdit_UI\res\Toolbar256.bmp">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="UserImages.bmp">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="resorce\new_layer_btn\newlayer_a.bmp">
+      <Filter>リソース ファイル\new_layer_btn</Filter>
+    </None>
+    <None Include="resorce\new_layer_btn\newlayer_b.bmp">
+      <Filter>リソース ファイル\new_layer_btn</Filter>
+    </None>
+    <None Include="resorce\new_layer_btn\newlayer_c.bmp">
+      <Filter>リソース ファイル\new_layer_btn</Filter>
+    </None>
+    <None Include="resorce\delete_layer_btn\deletelayer_a.bmp">
+      <Filter>リソース ファイル\delete_layer_btn</Filter>
+    </None>
+    <None Include="resorce\delete_layer_btn\deletelayer_b.bmp">
+      <Filter>リソース ファイル\delete_layer_btn</Filter>
+    </None>
+    <None Include="resorce\delete_layer_btn\deletelayer_c.bmp">
+      <Filter>リソース ファイル\delete_layer_btn</Filter>
+    </None>
+    <None Include="resorce\left_btn\left_a.bmp">
+      <Filter>リソース ファイル\left_btn</Filter>
+    </None>
+    <None Include="resorce\left_btn\left_b.bmp">
+      <Filter>リソース ファイル\left_btn</Filter>
+    </None>
+    <None Include="resorce\left_btn\left_c.bmp">
+      <Filter>リソース ファイル\left_btn</Filter>
+    </None>
+    <None Include="resorce\right_btn\right_a.bmp">
+      <Filter>リソース ファイル\right_btn</Filter>
+    </None>
+    <None Include="resorce\right_btn\right_b.bmp">
+      <Filter>リソース ファイル\right_btn</Filter>
+    </None>
+    <None Include="resorce\right_btn\right_c.bmp">
+      <Filter>リソース ファイル\right_btn</Filter>
+    </None>
+    <None Include="resorce\new_layer_group_btn\newlayergroup_a.bmp">
+      <Filter>リソース ファイル\new_layer_group_btn</Filter>
+    </None>
+    <None Include="resorce\new_layer_group_btn\newlayergroup_b.bmp">
+      <Filter>リソース ファイル\new_layer_group_btn</Filter>
+    </None>
+    <None Include="resorce\new_layer_group_btn\newlayergroup_c.bmp">
+      <Filter>リソース ファイル\new_layer_group_btn</Filter>
+    </None>
+    <None Include="resorce\delete_palette_color_btn\delete_palette_color_btn_a.bmp">
+      <Filter>リソース ファイル\delete_palette_color_btn</Filter>
+    </None>
+    <None Include="resorce\delete_palette_color_btn\delete_palette_color_btn_b.bmp">
+      <Filter>リソース ファイル\delete_palette_color_btn</Filter>
+    </None>
+    <None Include="resorce\delete_palette_color_btn\delete_palette_color_btn_c.bmp">
+      <Filter>リソース ファイル\delete_palette_color_btn</Filter>
+    </None>
+    <None Include="resorce\new_palette_color_btn\new_palette_color_btn_a.bmp">
+      <Filter>リソース ファイル\new_palette_color_btn</Filter>
+    </None>
+    <None Include="resorce\new_palette_color_btn\new_palette_color_btn_b.bmp">
+      <Filter>リソース ファイル\new_palette_color_btn</Filter>
+    </None>
+    <None Include="resorce\new_palette_color_btn\new_palette_color_btn_c.bmp">
+      <Filter>リソース ファイル\new_palette_color_btn</Filter>
+    </None>
+    <None Include="..\ImgEditPropertySheet.vsprops" />
+    <None Include="resorce\view_left_rot_btn\view_left_rot_btn_a.bmp">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="resorce\view_left_rot_btn\view_left_rot_btn_b.bmp">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="resorce\view_left_rot_btn\view_left_rot_btn_c.bmp">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="resorce\view_right_rot_btn\view_right_rot_btn_a.bmp">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="resorce\view_right_rot_btn\view_right_rot_btn_b.bmp">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="resorce\view_right_rot_btn\view_right_rot_btn_c.bmp">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="resorce\view_flip_h_btn\view_flip_h_btn_a.bmp">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="resorce\view_flip_h_btn\view_flip_h_btn_b.bmp">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="resorce\view_flip_h_btn\view_flip_h_btn_c.bmp">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="resorce\view_flip_v_btn\view_flip_v_btn_a.bmp">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="resorce\view_flip_v_btn\view_flip_v_btn_b.bmp">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="resorce\view_flip_v_btn\view_flip_v_btn_c.bmp">
+      <Filter>リソース ファイル</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ImgEdit_UI\ImgEdit_UI.rc">
+      <Filter>リソース ファイル</Filter>
+    </ResourceCompile>
+    <ResourceCompile Include="wind.rc">
+      <Filter>リソース ファイル</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

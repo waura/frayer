@@ -1,0 +1,115 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_COLOR_BALANCE_DLG DIALOGEX 0, 0, 316, 232
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ColorBalance"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,205,211,50,14
+    PUSHBUTTON      "キャンセル",IDCANCEL,259,211,50,14
+    CONTROL         "",IDC_CB_R_SLIDER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,20,36,228,15
+    LTEXT           "シアン",IDC_STATIC,20,24,20,8
+    LTEXT           "レッド",IDC_STATIC,236,24,18,8
+    EDITTEXT        IDC_CB_R_EDIT,260,36,40,14,ES_AUTOHSCROLL | ES_WANTRETURN | ES_NUMBER,WS_EX_RIGHT
+    CONTROL         "",IDC_CB_G_SLIDER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,20,73,228,15
+    LTEXT           "マゼンダ",IDC_STATIC,20,61,26,8
+    LTEXT           "グリーン",IDC_STATIC,236,61,24,8
+    EDITTEXT        IDC_CB_G_EDIT,260,73,40,14,ES_AUTOHSCROLL | ES_NUMBER,WS_EX_RIGHT
+    CONTROL         "",IDC_CB_B_SLIDER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,20,108,228,15
+    LTEXT           "イエロー",IDC_STATIC,20,95,26,8
+    LTEXT           "ブルー",IDC_STATIC,236,95,20,8
+    EDITTEXT        IDC_CB_B_EDIT,260,108,40,14,ES_AUTOHSCROLL | ES_NUMBER,WS_EX_RIGHT
+    GROUPBOX        "カラーバランス",IDC_STATIC,7,7,302,125
+    GROUPBOX        "調整する階調",IDC_STATIC,7,138,302,40
+    CONTROL         "シャドウ",IDC_RADIO_SH,"Button",BS_AUTORADIOBUTTON,24,156,40,10
+    CONTROL         "中間調",IDC_RADIO_MD,"Button",BS_AUTORADIOBUTTON,84,156,40,10
+    CONTROL         "ハイライト",IDC_RADIO_HL,"Button",BS_AUTORADIOBUTTON,150,156,45,10
+    CONTROL         "輝度を保存する",IDC_CHECK_PL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,192,67,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_COLOR_BALANCE_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 225
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 日本語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

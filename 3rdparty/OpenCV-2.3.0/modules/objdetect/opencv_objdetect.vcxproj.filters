@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\cascadedetect.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\datamatrix.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\distancetransform.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\featurepyramid.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fft.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\haar.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hog.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\latentsvm.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\latentsvmdetector.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lsvmparser.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lsvmtbbversion.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\matching.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\planardetect.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\precomp.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\resizeimg.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\routine.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\_latentsvm.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\_lsvmparser.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\_lsvm_distancetransform.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\_lsvm_error.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\_lsvm_fft.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\_lsvm_matching.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\_lsvm_resizeimg.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\_lsvm_routine.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\_lsvm_tbbversion.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\_lsvm_types.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Src">
+      <UniqueIdentifier>{CCFD279C-8877-4B11-8AD8-D57E72F67563}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{20AC3CB9-27A6-4B42-BFFC-BEE2F5EF4E9E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="include\opencv2\objdetect\objdetect.hpp">
+      <Filter>Include</Filter>
+    </None>
+    <None Include="src\precomp.hpp">
+      <Filter>Src</Filter>
+    </None>
+  </ItemGroup>
+</Project>

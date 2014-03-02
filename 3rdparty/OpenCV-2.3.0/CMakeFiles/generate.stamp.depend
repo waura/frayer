@@ -1,0 +1,43 @@
+# CMake generation dependency list for this directory.
+D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/CMakeLists.txt
+D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/CMakeFiles/CMakeSystem.cmake
+D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/CMakeFiles/CMakeCCompiler.cmake
+D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/CMakeFiles/CMakeCXXCompiler.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/CMakeGenericSystem.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/Platform/gcc.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/Platform/Windows.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/Platform/WindowsPaths.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/CMakeCInformation.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/Platform/Windows-cl.cmake
+D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/CMakeFiles/CMakeCPlatform.cmake
+D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/CMakeFiles/CMakeCXXPlatform.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/Platform/cl.cmake
+D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/CMakeFiles/CMakeRCCompiler.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/CMakeRCInformation.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/CMakeCXXInformation.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/CMakeCommonLanguageInclude.cmake
+D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/OpenCVPCHSupport.cmake
+D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/OpenCVModule.cmake
+D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/OpenCVFindOpenEXR.cmake
+D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/OpenCVFindLATEX.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/FindPythonInterp.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/FindPackageMessage.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/FindPythonLibs.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/CMakeFindFrameworks.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/FindPackageMessage.cmake
+D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/cvconfig.h.cmake
+D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/OpenCVConfig.cmake.in
+D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/OpenCVConfig.cmake.in
+D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/OpenCVConfig.cmake.in
+D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/opencv.pc.cmake.in
+D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/cmake_uninstall.cmake.in
+D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/Package.cmake.in
+D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/.cpack/Package.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/InstallRequiredSystemLibraries.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/CPack.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Templates/CPackConfig.cmake.in
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Templates/CPackConfig.cmake.in

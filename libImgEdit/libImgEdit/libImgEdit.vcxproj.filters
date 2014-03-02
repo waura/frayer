@@ -1,0 +1,642 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Brush">
+      <UniqueIdentifier>{92197dac-7c41-4fe8-9588-4fe388608ca7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Brush\src">
+      <UniqueIdentifier>{2af6204c-b60b-4efa-862c-c202961fa0ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Brush\header">
+      <UniqueIdentifier>{91cd46d5-effa-446e-a219-509eea7f91bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ImgData">
+      <UniqueIdentifier>{5e630d4b-cc20-4f76-bd74-61ad8f644cfe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ImgData\src">
+      <UniqueIdentifier>{37eb1992-daa5-4faa-ad9f-caf5afd4d488}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ImgData\header">
+      <UniqueIdentifier>{f15aff13-0670-4ef6-b668-cf5df28c4cf7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Effect">
+      <UniqueIdentifier>{31465959-8e7d-42b4-85fa-431ada857862}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Effect\src">
+      <UniqueIdentifier>{62a161d7-644b-4a0d-843e-ebe41f2d79e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Effect\include">
+      <UniqueIdentifier>{78982b80-9bd0-468c-aec5-486bea50a059}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialog">
+      <UniqueIdentifier>{6368d9c6-a7fc-4dde-ad49-d3cdab1f4bec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Debug">
+      <UniqueIdentifier>{7fdccc58-3136-4d39-aa1a-f131cdbb2b13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugin">
+      <UniqueIdentifier>{7031f7b0-f003-4d77-bc8e-79b3d21cd590}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugin\header">
+      <UniqueIdentifier>{8a175515-e118-47ca-b559-dc7f80f8a35f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugin\src">
+      <UniqueIdentifier>{e2ef46c9-33e5-42d1-b3e2-9fae0477ca5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugin\IEIOfyd">
+      <UniqueIdentifier>{4153e593-d874-469f-ae37-61268207db96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugin\IEIOfyd\header">
+      <UniqueIdentifier>{e0c5f9fa-1ce6-48fe-bc53-0f9d3a4cac81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugin\IEIOfyd\src">
+      <UniqueIdentifier>{c9f98c91-fc2e-497e-a4ad-49f31681d71a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LayerSynthesizer">
+      <UniqueIdentifier>{585c8c01-e8bc-4a32-b64b-09ff518a92c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LayerSynthesizer\include">
+      <UniqueIdentifier>{17bb2b14-e614-4785-8151-216fb08089fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LayerSynthesizer\src">
+      <UniqueIdentifier>{74ce78ff-08c7-49da-a40e-1345d72de0f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InputRevise">
+      <UniqueIdentifier>{b7d6eaae-67f9-4176-94c9-0c79621658ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InputRevise\header">
+      <UniqueIdentifier>{84941fb6-ff09-4970-b92b-03b6f18c7713}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InputRevise\src">
+      <UniqueIdentifier>{c0bb2566-b4fe-4958-b5a5-68e00de79a26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EventListener">
+      <UniqueIdentifier>{d56cf15b-7020-4615-93d9-c24961f386a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EventListener\header">
+      <UniqueIdentifier>{5368d201-5e9e-42e1-bad0-f279792499fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FileHandle">
+      <UniqueIdentifier>{b54671e1-ba61-4783-b540-1a71ea92abb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FileHandle\header">
+      <UniqueIdentifier>{6ea3f430-a594-41ec-a0dc-8b44c1796ea9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FileHandle\src">
+      <UniqueIdentifier>{3e26d182-0978-4b08-99fd-9ab1796eda1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MaskSynthesizer">
+      <UniqueIdentifier>{b9a6e76f-325e-4d6a-9367-eabd069214fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MaskSynthesizer\include">
+      <UniqueIdentifier>{2d077344-59c5-4ae9-8da3-0bc1c4fcf6d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MaskSynthesizer\src">
+      <UniqueIdentifier>{c7973f5d-9f48-41cf-aab1-04a3b22bad1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PluginMG">
+      <UniqueIdentifier>{a17974d5-8257-4d1b-8180-c2b7495b0ade}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PluginMG\src">
+      <UniqueIdentifier>{bd90107e-9f70-4583-a616-384d82997376}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PluginMG\include">
+      <UniqueIdentifier>{a2416cdb-8ada-4ebb-b9f6-ad5915ae09e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Palette">
+      <UniqueIdentifier>{a41d5828-6044-4775-ae68-e204715e5081}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Palette\header">
+      <UniqueIdentifier>{31542e05-8759-453c-9f4f-b1fca320c297}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Palette\src">
+      <UniqueIdentifier>{5a1af146-bb2b-4403-9a08-cfbd64d93f40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tool">
+      <UniqueIdentifier>{d4abd85e-2e3b-40fd-861b-731301ebed0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tool\include">
+      <UniqueIdentifier>{2aac5521-9910-45f4-a454-c9bc180253a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tool\src">
+      <UniqueIdentifier>{5895ec65-5549-432a-912a-f6cbb440f32a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="babel">
+      <UniqueIdentifier>{fc4df13a-cdf9-45f3-8a33-cb5d0b0842f6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\IECoursorMG.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\IEEventCapture.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\IEFileIOCommon.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\IEKeyMap.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\IEMenuItemInfo.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\IEMenuMG.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\IEParamRegister.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\IEStringHandle.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ImgEdit.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ImgEditConfig.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libImgEdit.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\stdafx.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\IEBrush.cpp">
+      <Filter>Brush\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\IEBrushGruop.cpp">
+      <Filter>Brush\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\IEBrushIO.cpp">
+      <Filter>Brush\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\IEBrushMG.cpp">
+      <Filter>Brush\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\IEEMBrush.cpp">
+      <Filter>Brush\src</Filter>
+    </ClCompile>
+    <ClCompile Include="IEImgBrush.cpp">
+      <Filter>Brush\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\IImgLayer.cpp">
+      <Filter>ImgData\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ImgFile.cpp">
+      <Filter>ImgData\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ImgLayer.cpp">
+      <Filter>ImgData\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ImgLayerGroup.cpp">
+      <Filter>ImgData\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ImgMask.cpp">
+      <Filter>ImgData\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\IEffect.cpp">
+      <Filter>Effect\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\OutputError.cpp">
+      <Filter>Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\IIETool.cpp">
+      <Filter>Plugin\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ILayerSynthesizer.cpp">
+      <Filter>Plugin\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\LoadFydFile.cpp">
+      <Filter>Plugin\IEIOfyd\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SaveFydFile.cpp">
+      <Filter>Plugin\IEIOfyd\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\LayerSynthesizerMG.cpp">
+      <Filter>LayerSynthesizer\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\IInputRevise.cpp">
+      <Filter>InputRevise\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\InputGaussianRevise.cpp">
+      <Filter>InputRevise\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\InputMovingAverageRevise.cpp">
+      <Filter>InputRevise\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\InputNoRevise.cpp">
+      <Filter>InputRevise\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\InputReviseMG.cpp">
+      <Filter>InputRevise\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\AddCopyLayerHandle.cpp">
+      <Filter>FileHandle\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\AddNewLayerGroupHandle.cpp">
+      <Filter>FileHandle\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\AddNewLayerHandle.cpp">
+      <Filter>FileHandle\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\AddNewMaskHandle.cpp">
+      <Filter>FileHandle\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ChangeCanvasSizeHandle.cpp">
+      <Filter>FileHandle\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ChangeResolutionHandle.cpp">
+      <Filter>FileHandle\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\EditLayerHandle.cpp">
+      <Filter>FileHandle\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ImgFileHandleMG.cpp">
+      <Filter>FileHandle\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\MergeLayerHandle.cpp">
+      <Filter>FileHandle\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\RemoveLayerHandle.cpp">
+      <Filter>FileHandle\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SetLayerNameHandle.cpp">
+      <Filter>FileHandle\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\StackHandle.cpp">
+      <Filter>FileHandle\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\MaskSynthesizerMG.cpp">
+      <Filter>MaskSynthesizer\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\EffectMG.cpp">
+      <Filter>PluginMG\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\IECommandMG.cpp">
+      <Filter>PluginMG\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ImgFileIOMG.cpp">
+      <Filter>PluginMG\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\IEPalette.cpp">
+      <Filter>Palette\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\IEPaletteMG.cpp">
+      <Filter>Palette\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\IEToolGroup.cpp">
+      <Filter>Tool\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\IEToolMG.cpp">
+      <Filter>Tool\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\IEBrushTextureMG.cpp">
+      <Filter>Brush\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdparty\babel\babel.cpp">
+      <Filter>babel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\RLE.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Base64.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\ImgEdit_UI\resource1.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inlcude\IEImgBrush.h">
+      <Filter>Brush\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inlcude\IEIOfyd.h">
+      <Filter>Plugin\IEIOfyd\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImgFile.h">
+      <Filter>ImgData\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\IEffectEditDialog.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\AddMaskSynthesizer.h">
+      <Filter>MaskSynthesizer\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\MaskSynthesizerMG.h">
+      <Filter>MaskSynthesizer\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\OutputError.h">
+      <Filter>Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ILayerSynthesizer.h">
+      <Filter>LayerSynthesizer\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\AddCopyLayerHandle.h">
+      <Filter>FileHandle\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\AddNewLayerGroupHandle.h">
+      <Filter>FileHandle\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\AddNewLayerHandle.h">
+      <Filter>FileHandle\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\AddNewMaskHandle.h">
+      <Filter>FileHandle\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ChangeCanvasSizeHandle.h">
+      <Filter>FileHandle\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ChangeLayerLineHandle.h">
+      <Filter>FileHandle\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ChangeLayerOpacityHandle.h">
+      <Filter>FileHandle\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ChangeLayerSynthFourCCHandle.h">
+      <Filter>FileHandle\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ChangeResolutionHandle.h">
+      <Filter>FileHandle\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\EditLayerHandle.h">
+      <Filter>FileHandle\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\EditMaskHandle.h">
+      <Filter>FileHandle\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImgFileHandle.h">
+      <Filter>FileHandle\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImgFileHandleMG.h">
+      <Filter>FileHandle\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\MergeLayerHandle.h">
+      <Filter>FileHandle\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\MoveLayerHandle.h">
+      <Filter>FileHandle\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\NullHandle.h">
+      <Filter>FileHandle\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RemoveLayerHandle.h">
+      <Filter>FileHandle\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SetLayerNameHandle.h">
+      <Filter>FileHandle\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\StackHandle.h">
+      <Filter>FileHandle\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\IEBrush.h">
+      <Filter>Brush\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\IEBrushGroup.h">
+      <Filter>Brush\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\IEBrushIO.h">
+      <Filter>Brush\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\IEBrushMG.h">
+      <Filter>Brush\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\IEEMBrush.h">
+      <Filter>Brush\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\IIEBrushPopupWnd.h">
+      <Filter>Brush\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\IEffect.h">
+      <Filter>Effect\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\IEBrushEventListener.h">
+      <Filter>EventListener\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\IEBrushGroupEventListener.h">
+      <Filter>EventListener\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\IEBrushMGEventListener.h">
+      <Filter>EventListener\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\IEPaletteEventListener.h">
+      <Filter>EventListener\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\IEPaletteMGEventListener.h">
+      <Filter>EventListener\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\IEToolMGEventListener.h">
+      <Filter>EventListener\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImgEditEventListener.h">
+      <Filter>EventListener\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImgFileEventListener.h">
+      <Filter>EventListener\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImgLayerEventListener.h">
+      <Filter>EventListener\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\EditNode.h">
+      <Filter>ImgData\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\IEditNode.h">
+      <Filter>ImgData\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\IImgLayer.h">
+      <Filter>ImgData\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImgLayer.h">
+      <Filter>ImgData\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImgLayerGroup.h">
+      <Filter>ImgData\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImgMask.h">
+      <Filter>ImgData\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImgUpdateData.h">
+      <Filter>ImgData\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\IInputRevise.h">
+      <Filter>InputRevise\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\InputGaussianRevise.h">
+      <Filter>InputRevise\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\InputMovingAverageRevise.h">
+      <Filter>InputRevise\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\InputNoRevise.h">
+      <Filter>InputRevise\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\InputReviseMG.h">
+      <Filter>InputRevise\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\AlphaMaskLayerSynthesizer.h">
+      <Filter>LayerSynthesizer\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\BurnLayerSynthesizer.h">
+      <Filter>LayerSynthesizer\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\DarkenLayerSynthesizer.h">
+      <Filter>LayerSynthesizer\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\DifferenceLayerSynthesizer.h">
+      <Filter>LayerSynthesizer\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\DodgeLayerSynthesizer.h">
+      <Filter>LayerSynthesizer\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\HardlightLayerSynthesizer.h">
+      <Filter>LayerSynthesizer\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\LayerSynthesizerMG.h">
+      <Filter>LayerSynthesizer\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\LightenLayerSynthesizer.h">
+      <Filter>LayerSynthesizer\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\MultLayerSynthesizer.h">
+      <Filter>LayerSynthesizer\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\NormalLayerSynthesizer.h">
+      <Filter>LayerSynthesizer\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\OverlayLayerSynthesizer.h">
+      <Filter>LayerSynthesizer\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ScreenLayerSynthesizer.h">
+      <Filter>LayerSynthesizer\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SoftlightLayerSynthesizer.h">
+      <Filter>LayerSynthesizer\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SubALayerSynthesizer.h">
+      <Filter>LayerSynthesizer\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\CopyMaskSynthesizer.h">
+      <Filter>MaskSynthesizer\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\OrMaskSynthesizer.h">
+      <Filter>MaskSynthesizer\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SubMaskSynthesizer.h">
+      <Filter>MaskSynthesizer\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\IEPalette.h">
+      <Filter>Palette\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\IEPaletteMG.h">
+      <Filter>Palette\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\IEModules.h">
+      <Filter>Plugin\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\IIECommand.h">
+      <Filter>Plugin\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\IIEGuiFrame.h">
+      <Filter>Plugin\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\IMaskSynthesizer.h">
+      <Filter>Plugin\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\EffectMG.h">
+      <Filter>PluginMG\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\IECommandMG.h">
+      <Filter>PluginMG\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImgFileIOMG.h">
+      <Filter>PluginMG\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\IEToolGroup.h">
+      <Filter>Tool\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\IEToolMG.h">
+      <Filter>Tool\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\IIETool.h">
+      <Filter>Tool\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\IEColor.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\IECoursorMG.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\IEEventCapture.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\IEFileIOCommon.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\IEKeyMap.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\IEMenuItemInfo.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\IEMenuMG.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\IEParamRegister.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\IEStringHandle.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\IETimer.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImgEdit.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImgEditConfig.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\InputData.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\IToolEditWndHandle.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\LibIEDllHeader.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\libImgEdit.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\stdafx.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\IEBrushTextureMG.h">
+      <Filter>Brush\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\IEKeyCord.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdparty\babel\babel.h">
+      <Filter>babel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RLE.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Base64.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

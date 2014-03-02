@@ -1,0 +1,257 @@
+//Microsoft App Studio generated resource script.
+//
+#include "res_16.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "dca_app.h"
+
+/////////////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+TW_APP_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Acquire...",                 100
+        MENUITEM "&Select Source...",           101
+        MENUITEM SEPARATOR
+        MENUITEM "&Native",                     110, CHECKED
+        MENUITEM "&File...",                    111
+        MENUITEM "&Memory",                     112
+        MENUITEM SEPARATOR
+        POPUP "Message &Level"
+        BEGIN
+            MENUITEM "&None",                       150
+            MENUITEM "&Error",                      151, CHECKED
+            MENUITEM "&Information",                152
+            MENUITEM "&Full",                       153
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Automati&c Feeding",          160
+        MENUITEM SEPARATOR
+        MENUITEM "Show&UI",                     120, CHECKED
+        MENUITEM "&Disable after Acquire",      121
+        MENUITEM SEPARATOR
+        MENUITEM "Run &Test",                   180
+        MENUITEM SEPARATOR
+        MENUITEM "&Quit",                       130
+    END
+    POPUP "&Special"
+    BEGIN
+        MENUITEM "&1 Load/Open SM",             201
+        MENUITEM "&2 Open Source",              202
+        MENUITEM "&3 Send...",                  203
+        MENUITEM "&4 Enable",                   204
+        MENUITEM "&5 Enable/Transfer",          205
+        MENUITEM "&6 Disable",                  206
+        MENUITEM "&7 Close Source",             207
+        MENUITEM "&8 Close /Unload SM",         208, CHECKED
+    END
+    POPUP "Autotests"
+    BEGIN
+        MENUITEM "Create",                      TW_AUTOTESTS_CREATE
+        MENUITEM "Run",                         TW_AUTOTESTS_RUN
+        MENUITEM "Step",                        TW_AUTOTESTS_STEP
+        MENUITEM SEPARATOR
+        MENUITEM "Log",                         TW_AUTOTESTS_LOG
+        MENUITEM SEPARATOR
+        MENUITEM "Stop Tests",                  TW_AUTOTESTS_STOP
+    END
+    POPUP "Check"
+    BEGIN
+        MENUITEM "Bitmaps",                     ID_CHECK_BITMAPS
+        MENUITEM "TWAIN Compliance",            ID_CHECK_TWAINCOMPLIANCE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About TWAIN Twacker",        700
+        MENUITEM "Script Commands",             ID_HELP_SCRIPTCOMMANDS
+    END
+END
+
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+TW_APP_ABOUTBOX DIALOG DISCARDABLE  68, 43, 136, 88
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "TWAIN_16"
+FONT 8, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",123,50,68,33,12
+    CTEXT           "TWAIN_16 Twacker",120,24,9,88,12,NOT WS_GROUP
+    CTEXT           "Version 1.5.4   3/31/95",121,4,29,129,12,NOT WS_GROUP
+    CTEXT           "TWAIN Working Group",301,24,49,89,8
+END
+
+100 DIALOG DISCARDABLE  8, 18, 161, 216
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Send"
+FONT 8, "Helv"
+BEGIN
+    LTEXT           "DG:",-1,5,27,20,8
+    COMBOBOX        101,45,25,109,45,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "DAT:",-1,5,42,20,8
+    COMBOBOX        102,45,40,109,125,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "MSG:",-1,5,57,20,8
+    COMBOBOX        103,45,55,109,96,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Ca&pability:",104,5,72,38,8
+    COMBOBOX        105,45,70,109,104,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Co&ntainer:",106,5,87,37,8
+    COMBOBOX        107,45,85,109,62,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "St&ructure:",108,5,102,150,8
+    EDITTEXT        109,5,113,149,71,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | WS_VSCROLL | WS_HSCROLL
+    PUSHBUTTON      "&Send",IDOK,15,193,40,14,WS_GROUP | NOT WS_TABSTOP
+    PUSHBUTTON      "&Close",IDCANCEL,61,193,40,14
+    PUSHBUTTON      "S&tatus",110,107,193,40,14
+    COMBOBOX        111,45,10,109,45,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Dest:",-1,5,12,20,8
+END
+
+209 DIALOG DISCARDABLE  50, 50, 261, 195
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Autotest"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Run Test",IDOK,200,5,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,200,22,50,14
+    EDITTEXT        220,87,90,110,12,ES_AUTOHSCROLL | 0x1000
+    LISTBOX         216,10,120,80,70,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LISTBOX         214,170,120,80,70,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        213,10,42,240,38,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         "Stop on errors",215,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,10,10,64,10
+    LTEXT           "Script Comments:",IDC_STATIC,10,30,60,10
+    LTEXT           "Tests",IDC_STATIC,10,109,30,8
+    LTEXT           "Tests to Run",IDC_STATIC,170,109,45,7
+    PUSHBUTTON      "Add ==>",217,107,125,45,14
+    PUSHBUTTON      "Delete ==>",218,107,144,45,14
+    PUSHBUTTON      "Open",219,107,164,45,14
+    LTEXT           "Path:",IDC_STATIC,64,94,20,8
+END
+
+300 DIALOG DISCARDABLE  0, 0, 269, 128
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Create Autotest"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Save",IDOK,215,5,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,215,25,50,14
+    DEFPUSHBUTTON   "Open",IDOK2,215,50,50,14
+    DEFPUSHBUTTON   "Add",IDADD,215,70,50,14
+    CONTROL         "Acquire",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,8,20,67,10
+    DEFPUSHBUTTON   "Delete",IDADD2,215,90,50,14
+    CONTROL         "Select Source",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,8,35,67,10
+    GROUPBOX        "Capabilities",IDC_STATIC,5,60,95,55
+END
+
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+TW_APP_ICO              ICON    DISCARDABLE     "c:\\twain\\twack\\RES\\TWACKER.ICO"
+TW_LOG_ICO              ICON    DISCARDABLE     "c:\\twain\\twack\\RES\\ICON1.ICO"
+#ifdef APSTUDIO_INVOKED
+//////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+                                          
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "res_16.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""dca_app.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+/////////////////////////////////////////////////////////////////////////////////////
+#endif    // APSTUDIO_INVOKED
+
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    INI_PREFERENCES         "Preferences"
+    INI_POSITION            "Position"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_DSMNAME             "TWAIN.DLL"
+    IDS_WINDOWTITLE         "TWAIN_16 Twacker"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_NODSM               "Sorry, could not find the TWAIN_16 Source Manager (TWAIN.DLL).  Please copy the TWAIN_16 Source Manager from your Program Disk to your Windows directory."
+    IDS_NODS                "Sorry, no TWAIN_16 Source found in the TWAIN directory.  Refer to your TWAIN Source installation instructions."
+    IDS_LOWMEMORY           "Sorry, there is not enough memory to Acquire."
+    IDS_MAXCONNECTIONS      "Sorry the TWAIN_16 Source %s is already in use."
+    IDS_BUMMER              "Bummer, there is a TWAIN_16 error!"
+    IDS_BADCAP              "Sorry, capability error has occurred."
+    IDS_BADPROTOCOL         "Sorry, protocol error has occurred."
+    IDS_BADVALUE            "Sorry, bad value."
+    IDS_SEQERROR            "Sorry, DG DAT MSG is out of expected sequence."
+    IDS_SUCCESS             "Sorry, detailed error status returns success."
+    IDS_NODETAIL            "Sorry, could not get detailed Error Code."
+    IDS_DEFAULT             "Sorry, Unknown error code returned by DG_CONTROL, DAT_STATUS, MSG_GET."
+    IDS_BADDEST             "Bad Destination"
+END
+
+
+#ifndef APSTUDIO_INVOKED
+////////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

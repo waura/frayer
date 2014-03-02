@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="shift_jis"?>
+<VisualStudioPropertySheet
+	ProjectType="Visual C++"
+	Version="8.00"
+	Name="DebugIEPropertySheet"
+	>
+	<Tool
+		Name="VCCLCompilerTool"
+		AdditionalIncludeDirectories="&quot;..\..\3rdparty\OpenCV-2.1.0\include&quot;;&quot;..\3rdparty\OpenCV-2.1.0\include&quot;;..\..\UtilOpenCV\include;..\..\libImgEdit\inlcude"
+		RuntimeLibrary="1"
+	/>
+	<Tool
+		Name="VCLinkerTool"
+		AdditionalDependencies="UtilOpenCV.lib libImgEdit.lib zlib.lib libjasper.lib libjpeg.lib libpng.lib libtiff.lib flann.lib opencv_lapack.lib cxcore.lib cv.lib cvaux.lib ml.lib highgui.lib"
+		AdditionalLibraryDirectories="&quot;..\..\UtilOpenCV\$(PlatformName)\Debug DLL&quot;;&quot;..\..\libImgEdit\$(PlatformName)\$(ConfigurationName)&quot;;&quot;..\..\3rdparty\OpenCV-2.1.0\lib\$(PlatformName)\$(ConfigurationName)&quot;;&quot;..\..\3rdparty\OpenCV-2.1.0\3rdparty\lib\$(PlatformName)\$(ConfigurationName)&quot;"
+		AddModuleNamesToAssembly=""
+	/>
+</VisualStudioPropertySheet>

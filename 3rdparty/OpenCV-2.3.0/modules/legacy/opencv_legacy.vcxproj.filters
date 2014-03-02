@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\3dtracker.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\auxutils.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bgfg_estimation.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\blobtrack.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\blobtrackanalysis.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\blobtrackanalysishist.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\blobtrackanalysisior.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\blobtrackanalysistrackdist.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\blobtrackgen1.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\blobtrackgenyml.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\blobtrackingauto.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\blobtrackingcc.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\blobtrackingccwithcr.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\blobtrackingkalman.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\blobtrackinglist.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\blobtrackingmsfg.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\blobtrackingmsfgs.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\blobtrackpostprockalman.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\blobtrackpostproclinear.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\blobtrackpostproclist.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\calcimagehomography.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\calibfilter.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\camshift.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\clique.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\compat.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\condens.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\contourtree.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\correspond.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\corrimages.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\createhandmask.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\decomppoly.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dominants.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dpstereo.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\eigenobjects.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\enmin.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\enteringblobdetection.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\enteringblobdetectionreal.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\epilines.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\extendededges.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\face.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\facedetection.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\facetemplate.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\findface.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\findhandregion.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hmm.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hmm1d.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hmmobs.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\image.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lcm.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lee.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\levmar.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\levmarprojbandle.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\levmartrif.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lines.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lmeds.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\morphcontours.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\morphing.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pgh.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\precomp.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\prewarp.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scanlines.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\segment.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\snakes.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\subdiv2.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\testseq.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\texture.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\trifocal.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vecfacetracking.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\video.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\face.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\facedetection.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\facetemplate.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\_facedetection.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\_matrix.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\_vectrack.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\_vm.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Src">
+      <UniqueIdentifier>{CCFD279C-8877-4B11-8AD8-D57E72F67563}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{20AC3CB9-27A6-4B42-BFFC-BEE2F5EF4E9E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="include\opencv2\legacy\blobtrack.hpp">
+      <Filter>Include</Filter>
+    </None>
+    <None Include="include\opencv2\legacy\compat.hpp">
+      <Filter>Include</Filter>
+    </None>
+    <None Include="include\opencv2\legacy\legacy.hpp">
+      <Filter>Include</Filter>
+    </None>
+    <None Include="include\opencv2\legacy\streams.hpp">
+      <Filter>Include</Filter>
+    </None>
+    <None Include="src\precomp.hpp">
+      <Filter>Src</Filter>
+    </None>
+  </ItemGroup>
+</Project>

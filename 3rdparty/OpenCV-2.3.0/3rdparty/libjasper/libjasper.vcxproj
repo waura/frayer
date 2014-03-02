@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{2DA13683-0F85-4405-9AB6-5E811FF402ED}</ProjectGUID>
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\lib\$(PlatformName)\$(Configuration)</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\lib\$(PlatformName)\$(Configuration)</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">libjasper.dir\$(PlatformName)\$(Configuration)</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">libjasper.dir\$(PlatformName)\$(Configuration)</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">libjasper</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">libjasper</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\lib\$(PlatformName)\$(Configuration)</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\lib\$(PlatformName)\$(Configuration)</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">libjasper.dir\$(PlatformName)\$(Configuration)</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">libjasper.dir\$(PlatformName)\$(Configuration)</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">libjasper</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">libjasper</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/.;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include/opencv;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/3rdparty/libjasper;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN64,EM64T;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_DEBUG;HAVE_CVCONFIG_H;EXCLUDE_MIF_SUPPORT;EXCLUDE_PNM_SUPPORT;EXCLUDE_BMP_SUPPORT;EXCLUDE_RAS_SUPPORT;EXCLUDE_JPG_SUPPORT;EXCLUDE_PGX_SUPPORT;JAS_WIN_MSVC_BUILD;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Debug</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(OutDir)\$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/.;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include/opencv;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/3rdparty/libjasper;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/.;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include/opencv;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/3rdparty/libjasper;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/.;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include/opencv;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/3rdparty/libjasper;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_DEBUG;HAVE_CVCONFIG_H;EXCLUDE_MIF_SUPPORT;EXCLUDE_PNM_SUPPORT;EXCLUDE_BMP_SUPPORT;EXCLUDE_RAS_SUPPORT;EXCLUDE_JPG_SUPPORT;EXCLUDE_PGX_SUPPORT;JAS_WIN_MSVC_BUILD;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Debug</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(OutDir)\$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/.;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include/opencv;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/3rdparty/libjasper;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/.;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include/opencv;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/3rdparty/libjasper;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/.;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include/opencv;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/3rdparty/libjasper;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN64,EM64T;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;HAVE_CVCONFIG_H;EXCLUDE_MIF_SUPPORT;EXCLUDE_PNM_SUPPORT;EXCLUDE_BMP_SUPPORT;EXCLUDE_RAS_SUPPORT;EXCLUDE_JPG_SUPPORT;EXCLUDE_PGX_SUPPORT;JAS_WIN_MSVC_BUILD;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Release</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(OutDir)\$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/.;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include/opencv;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/3rdparty/libjasper;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/.;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include/opencv;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/3rdparty/libjasper;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/.;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include/opencv;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/3rdparty/libjasper;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;HAVE_CVCONFIG_H;EXCLUDE_MIF_SUPPORT;EXCLUDE_PNM_SUPPORT;EXCLUDE_BMP_SUPPORT;EXCLUDE_RAS_SUPPORT;EXCLUDE_JPG_SUPPORT;EXCLUDE_PGX_SUPPORT;JAS_WIN_MSVC_BUILD;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Release</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(OutDir)\$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/.;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include/opencv;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/3rdparty/libjasper;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/.;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include/opencv;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/3rdparty/libjasper;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/3rdparty/libjasper/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/3rdparty/libjasper/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -H../.. -B../.. --check-stamp-file CMakeFiles/generate.stamp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -H../.. -B../.. --check-stamp-file CMakeFiles/generate.stamp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/3rdparty/libjasper/CMakeLists.txt;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\3rdparty\libjasper\CMakeLists.txt;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\3rdparty\libjasper\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/3rdparty/libjasper/CMakeLists.txt;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\3rdparty\libjasper\CMakeLists.txt;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\3rdparty\libjasper\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CMakeFiles\generate.stamp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CMakeFiles\generate.stamp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/3rdparty/libjasper/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/3rdparty/libjasper/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -H../.. -B../.. --check-stamp-file CMakeFiles/generate.stamp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -H../.. -B../.. --check-stamp-file CMakeFiles/generate.stamp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/3rdparty/libjasper/CMakeLists.txt;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\3rdparty\libjasper\CMakeLists.txt;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\3rdparty\libjasper\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/3rdparty/libjasper/CMakeLists.txt;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\3rdparty\libjasper\CMakeLists.txt;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\3rdparty\libjasper\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CMakeFiles\generate.stamp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CMakeFiles\generate.stamp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="jas_cm.c" />
+    <ClCompile Include="jas_debug.c" />
+    <ClCompile Include="jas_getopt.c" />
+    <ClCompile Include="jas_icc.c" />
+    <ClCompile Include="jas_iccdata.c" />
+    <ClCompile Include="jas_image.c" />
+    <ClCompile Include="jas_init.c" />
+    <ClCompile Include="jas_malloc.c" />
+    <ClCompile Include="jas_seq.c" />
+    <ClCompile Include="jas_stream.c" />
+    <ClCompile Include="jas_string.c" />
+    <ClCompile Include="jas_tmr.c" />
+    <ClCompile Include="jas_tvp.c" />
+    <ClCompile Include="jas_version.c" />
+    <ClCompile Include="jp2_cod.c" />
+    <ClCompile Include="jp2_dec.c" />
+    <ClCompile Include="jp2_enc.c" />
+    <ClCompile Include="jpc_bs.c" />
+    <ClCompile Include="jpc_cs.c" />
+    <ClCompile Include="jpc_dec.c" />
+    <ClCompile Include="jpc_enc.c" />
+    <ClCompile Include="jpc_math.c" />
+    <ClCompile Include="jpc_mct.c" />
+    <ClCompile Include="jpc_mqcod.c" />
+    <ClCompile Include="jpc_mqdec.c" />
+    <ClCompile Include="jpc_mqenc.c" />
+    <ClCompile Include="jpc_qmfb.c" />
+    <ClCompile Include="jpc_t1cod.c" />
+    <ClCompile Include="jpc_t1dec.c" />
+    <ClCompile Include="jpc_t1enc.c" />
+    <ClCompile Include="jpc_t2cod.c" />
+    <ClCompile Include="jpc_t2dec.c" />
+    <ClCompile Include="jpc_t2enc.c" />
+    <ClCompile Include="jpc_tagtree.c" />
+    <ClCompile Include="jpc_tsfb.c" />
+    <ClCompile Include="jpc_util.c" />
+    <ClInclude Include="jp2_cod.h" />
+    <ClInclude Include="jp2_dec.h" />
+    <ClInclude Include="jpc_bs.h" />
+    <ClInclude Include="jpc_cod.h" />
+    <ClInclude Include="jpc_cs.h" />
+    <ClInclude Include="jpc_dec.h" />
+    <ClInclude Include="jpc_enc.h" />
+    <ClInclude Include="jpc_fix.h" />
+    <ClInclude Include="jpc_flt.h" />
+    <ClInclude Include="jpc_math.h" />
+    <ClInclude Include="jpc_mct.h" />
+    <ClInclude Include="jpc_mqcod.h" />
+    <ClInclude Include="jpc_mqdec.h" />
+    <ClInclude Include="jpc_mqenc.h" />
+    <ClInclude Include="jpc_qmfb.h" />
+    <ClInclude Include="jpc_t1cod.h" />
+    <ClInclude Include="jpc_t1dec.h" />
+    <ClInclude Include="jpc_t1enc.h" />
+    <ClInclude Include="jpc_t2cod.h" />
+    <ClInclude Include="jpc_t2dec.h" />
+    <ClInclude Include="jpc_t2enc.h" />
+    <ClInclude Include="jpc_tagtree.h" />
+    <ClInclude Include="jpc_tsfb.h" />
+    <ClInclude Include="jpc_util.h" />
+    <ClInclude Include="jasper\jasper.h" />
+    <ClInclude Include="jasper\jas_cm.h" />
+    <ClInclude Include="jasper\jas_config.h" />
+    <ClInclude Include="jasper\jas_config2.h" />
+    <ClInclude Include="jasper\jas_debug.h" />
+    <ClInclude Include="jasper\jas_fix.h" />
+    <ClInclude Include="jasper\jas_getopt.h" />
+    <ClInclude Include="jasper\jas_icc.h" />
+    <ClInclude Include="jasper\jas_image.h" />
+    <ClInclude Include="jasper\jas_init.h" />
+    <ClInclude Include="jasper\jas_malloc.h" />
+    <ClInclude Include="jasper\jas_math.h" />
+    <ClInclude Include="jasper\jas_seq.h" />
+    <ClInclude Include="jasper\jas_stream.h" />
+    <ClInclude Include="jasper\jas_string.h" />
+    <ClInclude Include="jasper\jas_tmr.h" />
+    <ClInclude Include="jasper\jas_tvp.h" />
+    <ClInclude Include="jasper\jas_types.h" />
+    <ClInclude Include="jasper\jas_version.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/ZERO_CHECK.vcxproj">
+      <Project>A667D38E-F1F6-4386-A8EB-E7BF9A050C0F</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

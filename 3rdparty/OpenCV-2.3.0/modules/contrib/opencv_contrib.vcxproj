@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{DB20A793-654C-4027-81F0-6B4489B58A79}</ProjectGUID>
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\lib\$(PlatformName)\$(Configuration)</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\lib\$(PlatformName)\$(Configuration)</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">opencv_contrib.dir\$(PlatformName)\$(Configuration)</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">opencv_contrib.dir\$(PlatformName)\$(Configuration)</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">opencv_contrib</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">opencv_contrib</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\lib\$(PlatformName)\$(Configuration)</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\lib\$(PlatformName)\$(Configuration)</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">opencv_contrib.dir\$(PlatformName)\$(Configuration)</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">opencv_contrib.dir\$(PlatformName)\$(Configuration)</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">opencv_contrib</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">opencv_contrib</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions> /EHsc- %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/.;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include/opencv;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/src;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../core/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../imgproc/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../calib3d/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../features2d/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../highgui/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../ml/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../video/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../objdetect/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../flann/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <ForcedIncludeFiles>D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/src/precomp.hpp</ForcedIncludeFiles>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/src/precomp.hpp</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN64,EM64T;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_DEBUG;HAVE_CVCONFIG_H;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Debug</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(OutDir)\$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/.;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include/opencv;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/src;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../core/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../imgproc/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../calib3d/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../features2d/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../highgui/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../ml/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../video/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../objdetect/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../flann/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/.;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include/opencv;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/src;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../core/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../imgproc/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../calib3d/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../features2d/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../highgui/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../ml/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../video/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../objdetect/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../flann/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;../../lib/Debug/opencv_core230d.lib;../../lib/Debug/opencv_imgproc230d.lib;../../lib/Debug/opencv_calib3d230d.lib;../../lib/Debug/opencv_features2d230d.lib;../../lib/Debug/opencv_highgui230d.lib;../../lib/Debug/opencv_ml230d.lib;../../lib/Debug/opencv_video230d.lib;../../lib/Debug/opencv_objdetect230d.lib;../../lib/Debug/opencv_flann230d.lib;../../lib/Debug/opencv_calib3d230d.lib;../../lib/Debug/opencv_features2d230d.lib;../../lib/Debug/opencv_highgui230d.lib;../../lib/Debug/opencv_imgproc230d.lib;../../lib/Debug/opencv_flann230d.lib;../../lib/Debug/opencv_core230d.lib;../../3rdparty/lib/Debug/zlibd.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>libc</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/lib/Debug/opencv_contrib230d.lib</ImportLibrary>
+      <ProgramDataBaseFileName>D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/bin/Debug/opencv_contrib230d.pdb</ProgramDataBaseFileName>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+      <Version>0.0</Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /EHsc- %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/.;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include/opencv;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/src;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../core/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../imgproc/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../calib3d/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../features2d/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../highgui/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../ml/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../video/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../objdetect/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../flann/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <ForcedIncludeFiles>D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/src/precomp.hpp</ForcedIncludeFiles>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/src/precomp.hpp</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_DEBUG;HAVE_CVCONFIG_H;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Debug</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(OutDir)\$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/.;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include/opencv;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/src;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../core/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../imgproc/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../calib3d/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../features2d/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../highgui/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../ml/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../video/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../objdetect/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../flann/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/.;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include/opencv;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/src;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../core/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../imgproc/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../calib3d/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../features2d/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../highgui/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../ml/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../video/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../objdetect/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../flann/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;../../lib/Debug/opencv_core230d.lib;../../lib/Debug/opencv_imgproc230d.lib;../../lib/Debug/opencv_calib3d230d.lib;../../lib/Debug/opencv_features2d230d.lib;../../lib/Debug/opencv_highgui230d.lib;../../lib/Debug/opencv_ml230d.lib;../../lib/Debug/opencv_video230d.lib;../../lib/Debug/opencv_objdetect230d.lib;../../lib/Debug/opencv_flann230d.lib;../../lib/Debug/opencv_calib3d230d.lib;../../lib/Debug/opencv_features2d230d.lib;../../lib/Debug/opencv_highgui230d.lib;../../lib/Debug/opencv_imgproc230d.lib;../../lib/Debug/opencv_flann230d.lib;../../lib/Debug/opencv_core230d.lib;../../3rdparty/lib/Debug/zlibd.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>libc</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/lib/Debug/opencv_contrib230d.lib</ImportLibrary>
+      <ProgramDataBaseFileName>D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/bin/Debug/opencv_contrib230d.pdb</ProgramDataBaseFileName>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+      <Version>0.0</Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions> /EHsc- %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/.;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include/opencv;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/src;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../core/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../imgproc/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../calib3d/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../features2d/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../highgui/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../ml/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../video/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../objdetect/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../flann/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <ForcedIncludeFiles>D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/src/precomp.hpp</ForcedIncludeFiles>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/src/precomp.hpp</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN64,EM64T;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;HAVE_CVCONFIG_H;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Release</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(OutDir)\$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/.;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include/opencv;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/src;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../core/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../imgproc/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../calib3d/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../features2d/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../highgui/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../ml/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../video/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../objdetect/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../flann/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/.;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include/opencv;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/src;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../core/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../imgproc/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../calib3d/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../features2d/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../highgui/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../ml/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../video/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../objdetect/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../flann/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;../../lib/Release/opencv_core230.lib;../../lib/Release/opencv_imgproc230.lib;../../lib/Release/opencv_calib3d230.lib;../../lib/Release/opencv_features2d230.lib;../../lib/Release/opencv_highgui230.lib;../../lib/Release/opencv_ml230.lib;../../lib/Release/opencv_video230.lib;../../lib/Release/opencv_objdetect230.lib;../../lib/Release/opencv_flann230.lib;../../lib/Release/opencv_calib3d230.lib;../../lib/Release/opencv_features2d230.lib;../../lib/Release/opencv_highgui230.lib;../../lib/Release/opencv_imgproc230.lib;../../lib/Release/opencv_flann230.lib;../../lib/Release/opencv_core230.lib;../../3rdparty/lib/Release/zlib.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>libc</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/lib/Release/opencv_contrib230.lib</ImportLibrary>
+      <ProgramDataBaseFileName>D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/bin/Release/opencv_contrib230.pdb</ProgramDataBaseFileName>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+      <Version>0.0</Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /EHsc- %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/.;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include/opencv;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/src;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../core/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../imgproc/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../calib3d/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../features2d/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../highgui/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../ml/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../video/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../objdetect/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../flann/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <ForcedIncludeFiles>D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/src/precomp.hpp</ForcedIncludeFiles>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/src/precomp.hpp</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;HAVE_CVCONFIG_H;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Release</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(OutDir)\$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/.;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include/opencv;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/src;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../core/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../imgproc/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../calib3d/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../features2d/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../highgui/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../ml/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../video/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../objdetect/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../flann/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/.;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/include/opencv;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/src;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../core/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../imgproc/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../calib3d/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../features2d/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../highgui/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../ml/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../video/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../objdetect/include;D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/../flann/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;../../lib/Release/opencv_core230.lib;../../lib/Release/opencv_imgproc230.lib;../../lib/Release/opencv_calib3d230.lib;../../lib/Release/opencv_features2d230.lib;../../lib/Release/opencv_highgui230.lib;../../lib/Release/opencv_ml230.lib;../../lib/Release/opencv_video230.lib;../../lib/Release/opencv_objdetect230.lib;../../lib/Release/opencv_flann230.lib;../../lib/Release/opencv_calib3d230.lib;../../lib/Release/opencv_features2d230.lib;../../lib/Release/opencv_highgui230.lib;../../lib/Release/opencv_imgproc230.lib;../../lib/Release/opencv_flann230.lib;../../lib/Release/opencv_core230.lib;../../3rdparty/lib/Release/zlib.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>libc</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/lib/Release/opencv_contrib230.lib</ImportLibrary>
+      <ProgramDataBaseFileName>D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/bin/Release/opencv_contrib230.pdb</ProgramDataBaseFileName>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+      <Version>0.0</Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -H../.. -B../.. --check-stamp-file CMakeFiles/generate.stamp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -H../.. -B../.. --check-stamp-file CMakeFiles/generate.stamp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/CMakeLists.txt;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\modules\contrib\CMakeLists.txt;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\modules\contrib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/CMakeLists.txt;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\modules\contrib\CMakeLists.txt;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\modules\contrib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CMakeFiles\generate.stamp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CMakeFiles\generate.stamp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -H../.. -B../.. --check-stamp-file CMakeFiles/generate.stamp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -H../.. -B../.. --check-stamp-file CMakeFiles/generate.stamp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/CMakeLists.txt;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\modules\contrib\CMakeLists.txt;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\modules\contrib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/CMakeLists.txt;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\modules\contrib\CMakeLists.txt;D:\Documents\visual studio 2010\Projects\frayer\3rdparty\OpenCV-2.3.0\modules\contrib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CMakeFiles\generate.stamp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CMakeFiles\generate.stamp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\adaptiveskindetector.cpp" />
+    <ClCompile Include="src\ba.cpp" />
+    <ClCompile Include="src\chamfermatching.cpp" />
+    <ClCompile Include="src\fuzzymeanshifttracker.cpp" />
+    <ClCompile Include="src\octree.cpp" />
+    <ClCompile Include="src\polyfit.cpp" />
+    <ClCompile Include="src\precomp.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/src/precomp.hpp</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/src/precomp.hpp</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/src/precomp.hpp</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/contrib/src/precomp.hpp</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="src\selfsimilarity.cpp" />
+    <ClCompile Include="src\spinimages.cpp" />
+    <ClCompile Include="src\stereovar.cpp" />
+    <None Include="include\opencv2\contrib\contrib.hpp" />
+    <None Include="src\precomp.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/ZERO_CHECK.vcxproj">
+      <Project>A667D38E-F1F6-4386-A8EB-E7BF9A050C0F</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/calib3d/opencv_calib3d.vcxproj">
+      <Project>97B4D0D9-89B5-4FFE-8C7B-EFDA670583CF</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/core/opencv_core.vcxproj">
+      <Project>10A27054-F5C1-4AEA-A927-483DDE6BAB6B</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/features2d/opencv_features2d.vcxproj">
+      <Project>9D4B7BF6-24D4-4776-A90C-1F081CB32CB1</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/flann/opencv_flann.vcxproj">
+      <Project>23717D23-5A84-4AD2-BA66-7FE7657AAF0E</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/highgui/opencv_highgui.vcxproj">
+      <Project>F7BAE0B6-80C5-4135-B65E-BDC51D998718</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/imgproc/opencv_imgproc.vcxproj">
+      <Project>62272529-5400-4ECC-B1D3-2E0AF4EFB1D5</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/ml/opencv_ml.vcxproj">
+      <Project>B76BEA52-722D-45CE-BE85-A1CABB26A2CA</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/objdetect/opencv_objdetect.vcxproj">
+      <Project>412E4C51-F74F-420B-9137-2A6DFC69E91D</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Documents/visual studio 2010/Projects/frayer/3rdparty/OpenCV-2.3.0/modules/video/opencv_video.vcxproj">
+      <Project>C646A4DA-B1B7-46B3-87F8-34940A896BBF</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

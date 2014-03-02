@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\bagofwords.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\blobdetector.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\brief.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\calonder.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\descriptors.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\detectors.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\draw.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dynamic.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\evaluation.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fast.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\keypoint.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\matchers.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mser.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\oneway.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\orb.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\planardetect.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\precomp.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sift.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stardetector.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\surf.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Src">
+      <UniqueIdentifier>{CCFD279C-8877-4B11-8AD8-D57E72F67563}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{20AC3CB9-27A6-4B42-BFFC-BEE2F5EF4E9E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="include\opencv2\features2d\features2d.hpp">
+      <Filter>Include</Filter>
+    </None>
+    <None Include="src\orb_pattern.hpp">
+      <Filter>Src</Filter>
+    </None>
+    <None Include="src\precomp.hpp">
+      <Filter>Src</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,312 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource1.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 (日本) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource1.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_LAYER_STYLE DIALOGEX 0, 0, 250, 132
+STYLE DS_LOCALEDIT | DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "レイヤースタイル"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,193,7,50,14
+    PUSHBUTTON      "キャンセル",IDCANCEL,193,24,50,14
+    COMBOBOX        IDC_DRAW_MODE_COMBO,64,14,115,138,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "合成モード:",IDC_STATIC,19,17,38,8
+    LTEXT           "不透明度:",IDC_STATIC,18,39,36,12
+    EDITTEXT        IDC_LS_ALPHA_EDIT,64,36,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "%",IDC_STATIC,106,38,16,12
+    GROUPBOX        "描画",IDC_STATIC,8,4,181,58
+END
+
+IDD_EFFECT_EDIT DIALOGEX 0, 0, 222, 169
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "EffectEditDialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,165,7,50,14
+    PUSHBUTTON      "キャンセル",IDCANCEL,165,24,50,14
+    CONTROL         "",IDC_EDIT_PROGRESS,"msctls_progress32",WS_BORDER,0,155,221,14
+END
+
+IDD_IE_CONFIG DIALOGEX 0, 0, 355, 278
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "設定"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",ID_IEOK,193,256,50,14
+    PUSHBUTTON      "キャンセル",ID_IECANCEL,245,256,50,14
+    PUSHBUTTON      "適用",ID_IEAPPLY,298,256,50,14
+    CONTROL         "",IDC_CONFIG_TREE,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | TVS_TRACKSELECT | TVS_SINGLEEXPAND | WS_BORDER | WS_HSCROLL | WS_TABSTOP,7,7,104,250,WS_EX_CLIENTEDGE
+END
+
+IDD_CREATE_NEW_FILE DIALOGEX 0, 0, 262, 183
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "CreateNewFile"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,150,162,50,14
+    PUSHBUTTON      "キャンセル",IDCANCEL,204,162,50,14
+    EDITTEXT        IDC_WIDTH_EDIT,60,48,66,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_HEIGHT_EDIT,60,66,66,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "幅:",IDC_STATIC,45,51,12,8
+    GROUPBOX        "サイズ",IDC_STATIC,6,12,204,96
+    GROUPBOX        "ファイル設定",IDC_STATIC,6,114,252,41
+    LTEXT           "高さ:",IDC_STATIC,40,67,17,8
+    LTEXT           "背景色:",IDC_STATIC,24,134,28,8
+    COMBOBOX        IDC_BG_COLOR_COMBO,59,132,66,59,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_SIZE_UNIT_COMBO,132,57,60,67,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_FILE_SIZE_TEMPLATE_COMBO,60,30,138,97,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "既定サイズ:",IDC_STATIC,18,32,39,8
+    EDITTEXT        IDC_RESOLUTION_EDIT,60,84,66,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "解像度:",IDC_STATIC,28,86,28,8
+    LTEXT           "dpi",IDC_STATIC,132,87,10,8
+    CONTROL         "縦",IDC_VERTICAL_RADIO,"Button",BS_AUTORADIOBUTTON | WS_GROUP,222,30,24,10
+    CONTROL         "横",IDC_HORIZONTAL_RADIO,"Button",BS_AUTORADIOBUTTON,222,42,24,10
+    GROUPBOX        "向き",IDC_STATIC,216,12,42,48
+END
+
+IDD_MASK_STYLE DIALOGEX 0, 0, 286, 70
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "マスクスタイル"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,228,12,50,14
+    PUSHBUTTON      "キャンセル",IDCANCEL,228,36,50,14
+    GROUPBOX        "描画",IDC_STATIC,14,6,204,56
+    COMBOBOX        IDC_MASK_DRAW_MODE_COMBO,72,30,132,12,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "合算モード:",IDC_STATIC,25,32,42,12
+END
+
+IDD_BRUSH_EDIT DIALOGEX 0, 0, 243, 365
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "BrushEdit"
+FONT 10, "MS UI Gothic", 400, 0, 0x80
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,132,344,50,14
+    PUSHBUTTON      "キャンセル",IDCANCEL,186,344,50,14
+    GROUPBOX        "プレビュー",IDC_STATIC,7,7,227,59
+    CONTROL         "",IDC_PARAM_GROUP_TAB,"SysTabControl32",0x0,7,73,229,269
+END
+
+IDD_CREATE_NEW_PALETTE_COLOR DIALOGEX 0, 0, 216, 99
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "NewPaletteColor"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,108,78,50,14
+    PUSHBUTTON      "キャンセル",IDCANCEL,159,78,50,14
+    EDITTEXT        IDC_PALETTE_COLOR_EDIT,18,54,180,14,ES_AUTOHSCROLL
+    LTEXT           "名前",IDC_STATIC,12,42,17,8
+END
+
+IDD_BRUSH_BASE_PARAM_TAB DIALOGEX 0, 0, 265, 243
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "半径",IDC_STATIC,6,6,252,48
+    CONTROL         "",IDC_MIN_RAD_SLD,"msctls_trackbar32",TBS_NOTICKS | WS_TABSTOP,12,139,186,15
+    CONTROL         "",IDC_BASE_RAD_SLD,"msctls_trackbar32",TBS_NOTICKS | WS_TABSTOP,12,18,186,18
+    EDITTEXT        IDC_BASE_RAD_EDIT,204,18,49,14,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+    LTEXT           "コントロール:",IDC_STATIC,126,37,42,8
+    COMBOBOX        IDC_RAD_CTRL_COMBO,168,36,84,108,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_MIN_ALPHA_EDIT,204,175,49,14,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+    CONTROL         "",IDC_MIN_ALPHA_SLD,"msctls_trackbar32",TBS_NOTICKS | WS_TABSTOP,12,177,186,15
+    COMBOBOX        IDC_ALPHA_CTRL_COMBO,168,66,84,96,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "コントロール:",IDC_STATIC,132,100,42,8
+    CONTROL         "",IDC_HARDNESS_SLD,"msctls_trackbar32",TBS_NOTICKS | WS_TABSTOP,12,100,186,15
+    EDITTEXT        IDC_HARDNESS_EDIT,204,100,49,14,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+    GROUPBOX        "硬さ",IDC_STATIC,6,90,252,30
+    GROUPBOX        "最小半径",IDC_STATIC,6,127,252,28
+    GROUPBOX        "最小濃度",IDC_STATIC,6,163,252,30
+    EDITTEXT        IDC_MIN_RAD_EDIT,204,137,48,14,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "間隔",IDC_STATIC,6,199,252,36
+    CONTROL         "",IDC_INTERVAL_SLD,"msctls_trackbar32",TBS_NOTICKS | WS_TABSTOP,12,211,186,15
+    EDITTEXT        IDC_INTERVAL_EDIT,204,211,49,14,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+    LTEXT           "コントロール:",IDC_STATIC,126,67,42,8
+    GROUPBOX        "濃度",IDC_STATIC,6,54,252,33
+END
+
+IDD_BRUSH_TEXTURE_PARAM_TAB DIALOGEX 0, 0, 261, 266
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "テクスチャを使用する",IDC_IS_USE_BRUSH_TEXTURE_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,7,79,10
+    GROUPBOX        "プレビュー",IDC_STATIC,18,48,186,175
+    COMBOBOX        IDC_BRUSH_TEXTURE_NAME_COMBO,12,24,66,138,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_IE_CONFIG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 348
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 270
+    END
+
+    IDD_CREATE_NEW_FILE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 255
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_MASK_STYLE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 279
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 63
+    END
+
+    IDD_BRUSH_EDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 236
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 358
+    END
+
+    IDD_CREATE_NEW_PALETTE_COLOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 209
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 92
+    END
+
+    IDD_BRUSH_BASE_PARAM_TAB, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 258
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 237
+    END
+
+    IDD_BRUSH_TEXTURE_PARAM_TAB, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 254
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 259
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_EYE                 BITMAP                  "resorce\\eye18x18.bmp"
+IDB_NEYE                BITMAP                  "resorce\\neye18x18.bmp"
+IDB_NEW_LAYER_A         BITMAP                  "resorce\\new_layer_btn\\newlayer_a.bmp"
+IDB_NEW_LAYER_B         BITMAP                  "resorce\\new_layer_btn\\newlayer_b.bmp"
+IDB_NEW_LAYER_C         BITMAP                  "resorce\\new_layer_btn\\newlayer_c.bmp"
+IDB_DELETE_LAYER_A      BITMAP                  "resorce\\delete_layer_btn\\deletelayer_a.bmp"
+IDB_DELETE_LAYER_B      BITMAP                  "resorce\\delete_layer_btn\\deletelayer_b.bmp"
+IDB_DELETE_LAYER_C      BITMAP                  "resorce\\delete_layer_btn\\deletelayer_c.bmp"
+IDB_LEFT_A              BITMAP                  "resorce\\left_btn\\left_a.bmp"
+IDB_LEFT_B              BITMAP                  "resorce\\left_btn\\left_b.bmp"
+IDB_LEFT_C              BITMAP                  "resorce\\left_btn\\left_c.bmp"
+IDB_RIGHT_A             BITMAP                  "resorce\\right_btn\\right_a.bmp"
+IDB_RIGHT_B             BITMAP                  "resorce\\right_btn\\right_b.bmp"
+IDB_RIGHT_C             BITMAP                  "resorce\\right_btn\\right_c.bmp"
+IDB_NEW_LAYER_GROUP_A   BITMAP                  "resorce\\new_layer_group_btn\\newlayergroup_a.bmp"
+IDB_NEW_LAYER_GROUP_B   BITMAP                  "resorce\\new_layer_group_btn\\newlayergroup_b.bmp"
+IDB_NEW_LAYER_GROUP_C   BITMAP                  "resorce\\new_layer_group_btn\\newlayergroup_c.bmp"
+IDB_DELETE_PALETTE_COLOR_A BITMAP                  "resorce\\delete_palette_color_btn\\delete_palette_color_btn_a.bmp"
+IDB_DELETE_PALETTE_COLOR_B BITMAP                  "resorce\\delete_palette_color_btn\\delete_palette_color_btn_b.bmp"
+IDB_DELETE_PALETTE_COLOR_C BITMAP                  "resorce\\delete_palette_color_btn\\delete_palette_color_btn_c.bmp"
+IDB_NEW_PALETTE_COLOR_A BITMAP                  "resorce\\new_palette_color_btn\\new_palette_color_btn_a.bmp"
+IDB_NEW_PALETTE_COLOR_B BITMAP                  "resorce\\new_palette_color_btn\\new_palette_color_btn_b.bmp"
+IDB_NEW_PALETTE_COLOR_C BITMAP                  "resorce\\new_palette_color_btn\\new_palette_color_btn_c.bmp"
+IDB_LOCK_LAYER_ALPHA_A  BITMAP                  "resorce\\lock_layer_alpha\\lock_layer_alpha_btn_a.bmp"
+IDB_LOCK_LAYER_ALPHA_B  BITMAP                  "resorce\\lock_layer_alpha\\lock_layer_alpha_btn_b.bmp"
+IDB_LOCK_LAYER_ALPHA_C  BITMAP                  "resorce\\lock_layer_alpha\\lock_layer_alpha_btn_c.bmp"
+IDB_CLOSE_LAYER_GROUP_PANEL BITMAP                  "resorce\\layer_group_panel\\close_layer_group.bmp"
+IDB_OPEN_LAYER_GROUP_PANEL BITMAP                  "resorce\\layer_group_panel\\open_layer_group.bmp"
+IDB_VIEW_LEFT_ROT_A     BITMAP                  "resorce\\view_left_rot_btn\\view_left_rot_btn_a.bmp"
+IDB_VIEW_LEFT_ROT_B     BITMAP                  "resorce\\view_left_rot_btn\\view_left_rot_btn_b.bmp"
+IDB_VIEW_LEFT_ROT_C     BITMAP                  "resorce\\view_left_rot_btn\\view_left_rot_btn_c.bmp"
+IDB_VIEW_RIGHT_ROT_A    BITMAP                  "resorce\\view_right_rot_btn\\view_right_rot_btn_a.bmp"
+IDB_VIEW_RIGHT_ROT_B    BITMAP                  "resorce\\view_right_rot_btn\\view_right_rot_btn_b.bmp"
+IDB_VIEW_RIGHT_ROT_C    BITMAP                  "resorce\\view_right_rot_btn\\view_right_rot_btn_c.bmp"
+IDB_VIEW_FLIP_H_A       BITMAP                  "resorce\\view_flip_h_btn\\view_flip_h_btn_a.bmp"
+IDB_VIEW_FLIP_H_B       BITMAP                  "resorce\\view_flip_h_btn\\view_flip_h_btn_b.bmp"
+IDB_VIEW_FLIP_H_C       BITMAP                  "resorce\\view_flip_h_btn\\view_flip_h_btn_c.bmp"
+IDB_VIEW_FLIP_V_A       BITMAP                  "resorce\\view_flip_v_btn\\view_flip_v_btn_a.bmp"
+IDB_VIEW_FLIP_V_B       BITMAP                  "resorce\\view_flip_v_btn\\view_flip_v_btn_b.bmp"
+IDB_VIEW_FLIP_V_C       BITMAP                  "resorce\\view_flip_v_btn\\view_flip_v_btn_c.bmp"
+#endif    // 日本語 (日本) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

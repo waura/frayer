@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\bgfg_acmmm2003.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bgfg_codebook.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bgfg_common.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bgfg_gaussmix.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bgfg_gaussmix2.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\camshift.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\kalman.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lkpyramid.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\motempl.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\optflowbm.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\optflowgf.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\optflowhs.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\optflowlk.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\precomp.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Src">
+      <UniqueIdentifier>{CCFD279C-8877-4B11-8AD8-D57E72F67563}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{20AC3CB9-27A6-4B42-BFFC-BEE2F5EF4E9E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="include\opencv2\video\background_segm.hpp">
+      <Filter>Include</Filter>
+    </None>
+    <None Include="include\opencv2\video\tracking.hpp">
+      <Filter>Include</Filter>
+    </None>
+    <None Include="src\precomp.hpp">
+      <Filter>Src</Filter>
+    </None>
+  </ItemGroup>
+</Project>

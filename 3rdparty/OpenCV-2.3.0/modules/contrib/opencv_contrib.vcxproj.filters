@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\adaptiveskindetector.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ba.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\chamfermatching.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fuzzymeanshifttracker.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\octree.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\polyfit.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\precomp.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\selfsimilarity.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\spinimages.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stereovar.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Src">
+      <UniqueIdentifier>{CCFD279C-8877-4B11-8AD8-D57E72F67563}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{20AC3CB9-27A6-4B42-BFFC-BEE2F5EF4E9E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="include\opencv2\contrib\contrib.hpp">
+      <Filter>Include</Filter>
+    </None>
+    <None Include="src\precomp.hpp">
+      <Filter>Src</Filter>
+    </None>
+  </ItemGroup>
+</Project>

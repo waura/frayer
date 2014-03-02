@@ -1,0 +1,6 @@
+[4byte] signature "PFRY"
+[2byte] 色情報数
+色情報数分繰り返し
+	[4byte] 色データ
+	[1byte] 名前バイト数
+		[名前データ]

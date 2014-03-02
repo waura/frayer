@@ -1,0 +1,444 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|x64">
+      <Configuration>Template</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2C29F7BD-DA07-460C-B087-02F597758B81}</ProjectGuid>
+    <RootNamespace>ImgEdit_UI</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Template|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">frayer</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">frayer_x64</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\3rdparty\OpenCV-2.2.0\include;..\3rdparty\twain\twcommon;..\3rdparty\wtkit126 Folder\INCLUDE;..\libImgEdit\include;..\UtilOpenCV\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <SmallerTypeCheck>false</SmallerTypeCheck>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0411</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>UtilOpenCV.lib;libImgEdit.lib;zlib.lib;libjasper.lib;libjpeg.lib;libpng.lib;libtiff.lib;opencv_calib3d.lib;opencv_contrib.lib;opencv_core.lib;opencv_features2d.lib;opencv_flann.lib;opencv_highgui.lib;opencv_imgproc.lib;opencv_legacy.lib;opencv_ml.lib;opencv_objdetect.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>..\UtilOpenCV\$(Platform)\Debug DLL;..\libImgEdit\$(Platform)\$(Configuration);..\3rdparty\OpenCV-2.3.0\lib\$(Platform)\$(Configuration);..\3rdparty\OpenCV-2.3.0\3rdparty\lib\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\3rdparty\OpenCV-2.2.0\include;..\3rdparty\twain\twcommon;..\3rdparty\wtkit126 Folder\INCLUDE;..\libImgEdit\include;..\UtilOpenCV\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;EM64T;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <SmallerTypeCheck>false</SmallerTypeCheck>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0411</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>UtilOpenCV.lib;libImgEdit.lib;zlib.lib;libjasper.lib;libjpeg.lib;libpng.lib;libtiff.lib;opencv_calib3d.lib;opencv_contrib.lib;opencv_core.lib;opencv_features2d.lib;opencv_flann.lib;opencv_highgui.lib;opencv_imgproc.lib;opencv_legacy.lib;opencv_ml.lib;opencv_objdetect.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>..\UtilOpenCV\$(Platform)\Debug DLL;..\libImgEdit\$(Platform)\$(Configuration);..\3rdparty\OpenCV-2.3.0\lib\$(Platform)\$(Configuration);..\3rdparty\OpenCV-2.3.0\3rdparty\lib\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>..\3rdparty\OpenCV-2.2.0\include;..\3rdparty\twain\twcommon;..\3rdparty\wtkit126 Folder\INCLUDE;..\libImgEdit\include;..\UtilOpenCV\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0411</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>UtilOpenCV.lib;libImgEdit.lib;zlib.lib;libjasper.lib;libjpeg.lib;libpng.lib;libtiff.lib;opencv_calib3d.lib;opencv_contrib.lib;opencv_core.lib;opencv_features2d.lib;opencv_flann.lib;opencv_highgui.lib;opencv_imgproc.lib;opencv_legacy.lib;opencv_ml.lib;opencv_objdetect.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)frayer.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\UtilOpenCV\$(Platform)\Release DLL;..\libImgEdit\$(Platform)\$(Configuration);..\3rdparty\OpenCV-2.3.0\lib\$(Platform)\$(Configuration);..\3rdparty\OpenCV-2.3.0\3rdparty\lib\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>..\3rdparty\OpenCV-2.2.0\include;..\3rdparty\twain\twcommon;..\3rdparty\wtkit126 Folder\INCLUDE;..\libImgEdit\include;..\UtilOpenCV\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;EM64T;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0411</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>UtilOpenCV.lib;libImgEdit.lib;zlib.lib;libjasper.lib;libjpeg.lib;libpng.lib;libtiff.lib;opencv_calib3d.lib;opencv_contrib.lib;opencv_core.lib;opencv_features2d.lib;opencv_flann.lib;opencv_highgui.lib;opencv_imgproc.lib;opencv_legacy.lib;opencv_ml.lib;opencv_objdetect.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)frayer_x64.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\UtilOpenCV\$(Platform)\Release DLL;..\libImgEdit\$(Platform)\$(Configuration);..\3rdparty\OpenCV-2.3.0\lib\$(Platform)\$(Configuration);..\3rdparty\OpenCV-2.3.0\3rdparty\lib\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ImgEdit_UI\BrushTextureParamTabDialog.cpp" />
+    <ClCompile Include="ImgEdit_UI\FPSCounter.cpp" />
+    <ClCompile Include="ImgEdit_UI\IEBezierCurve.cpp" />
+    <ClCompile Include="ImgEdit_UI\LoadFromTWAIN.cpp" />
+    <ClCompile Include="ImgEdit_UI\stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ImgEdit_UI\LayerAlphaEdit.cpp" />
+    <ClCompile Include="ImgEdit_UI\LayerCtrl.cpp" />
+    <ClCompile Include="ImgEdit_UI\LayerFrame.cpp" />
+    <ClCompile Include="ImgEdit_UI\LayerGroupPanel.cpp" />
+    <ClCompile Include="ImgEdit_UI\LayerLockState.cpp" />
+    <ClCompile Include="ImgEdit_UI\LayerNameEdit.cpp" />
+    <ClCompile Include="ImgEdit_UI\LayerPanel.cpp" />
+    <ClCompile Include="ImgEdit_UI\LayerWnd.cpp" />
+    <ClCompile Include="ImgEdit_UI\BrushPanel.cpp" />
+    <ClCompile Include="ImgEdit_UI\BrushPreviewFrame.cpp" />
+    <ClCompile Include="ImgEdit_UI\BrushSelectFrame.cpp" />
+    <ClCompile Include="ImgEdit_UI\BrushSelectWnd.cpp" />
+    <ClCompile Include="ImgEdit_UI\ToolButton.cpp" />
+    <ClCompile Include="ImgEdit_UI\ToolFrame.cpp" />
+    <ClCompile Include="ImgEdit_UI\ToolPopupPanel.cpp" />
+    <ClCompile Include="ImgEdit_UI\ToolWnd.cpp" />
+    <ClCompile Include="ImgEdit_UI\EffectTreeWnd.cpp" />
+    <ClCompile Include="ImgEdit_UI\FileSizeScroll.cpp" />
+    <ClCompile Include="ImgEdit_UI\NavigatorWnd.cpp" />
+    <ClCompile Include="ImgEdit_UI\PreviewFrame.cpp" />
+    <ClCompile Include="ImgEdit_UI\ToolEditFrame.cpp" />
+    <ClCompile Include="ImgEdit_UI\ToolEditWnd.cpp" />
+    <ClCompile Include="ImgEdit_UI\HistoryFrame.cpp" />
+    <ClCompile Include="ImgEdit_UI\HistoryWnd.cpp" />
+    <ClCompile Include="ImgEdit_UI\MaskCtrl.cpp" />
+    <ClCompile Include="ImgEdit_UI\MaskFrame.cpp" />
+    <ClCompile Include="ImgEdit_UI\MaskPanel.cpp" />
+    <ClCompile Include="ImgEdit_UI\MaskWnd.cpp" />
+    <ClCompile Include="ImgEdit_UI\PaletteCtrlPane.cpp" />
+    <ClCompile Include="ImgEdit_UI\PaletteFrame.cpp" />
+    <ClCompile Include="ImgEdit_UI\PaletteWnd.cpp" />
+    <ClCompile Include="ImgEdit_UI\RGBSliderFrame.cpp" />
+    <ClCompile Include="ImgEdit_UI\RGBSliderWnd.cpp" />
+    <ClCompile Include="ImgEdit_UI\HSVCircleFrame.cpp" />
+    <ClCompile Include="ImgEdit_UI\HSVCircleWnd.cpp" />
+    <ClCompile Include="ImgEdit_UI\EditSliderCtrl.cpp" />
+    <ClCompile Include="ImgEdit_UI\HoverBitmapButton.cpp" />
+    <ClCompile Include="ImgEdit_UI\LabelComboBox.cpp" />
+    <ClCompile Include="ImgEdit_UI\ScrollWnd.cpp" />
+    <ClCompile Include="ImgEdit_UI\BrushPopupWnd.cpp" />
+    <ClCompile Include="ImgEdit_UI\CreateNewFileDialog.cpp" />
+    <ClCompile Include="ImgEdit_UI\IE_EffectEditDialog.cpp" />
+    <ClCompile Include="ImgEdit_UI\LayerStyleDialog.cpp" />
+    <ClCompile Include="ImgEdit_UI\NewPaletteColorDialog.cpp" />
+    <ClCompile Include="ImgEdit_UI\IEConfig_Environment.cpp" />
+    <ClCompile Include="ImgEdit_UI\IEConfig_InputRevise.cpp" />
+    <ClCompile Include="ImgEdit_UI\IEConfig_Shortcut.cpp" />
+    <ClCompile Include="ImgEdit_UI\IEConfig_ToolShift.cpp" />
+    <ClCompile Include="ImgEdit_UI\IEConfigDialog.cpp" />
+    <ClCompile Include="ImgEdit_UI\BrushBaseParamTabDialog.cpp" />
+    <ClCompile Include="ImgEdit_UI\IEEMBrushEditDialog.cpp" />
+    <ClCompile Include="ImgEdit_UI\ChildFrm.cpp" />
+    <ClCompile Include="ImgEdit_UI\ImgEdit_UI.cpp" />
+    <ClCompile Include="ImgEdit_UI\ImgEdit_UIDoc.cpp" />
+    <ClCompile Include="ImgEdit_UI\ImgEdit_UIView.cpp" />
+    <ClCompile Include="ImgEdit_UI\InputPointDevice.cpp" />
+    <ClCompile Include="ImgEdit_UI\MainFrm.cpp" />
+    <ClCompile Include="ImgEdit_UI\ViewCtrlPane.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ImgEdit_UI\BrushTextureParamTabDialog.h" />
+    <ClInclude Include="ImgEdit_UI\FPSCounter.h" />
+    <ClInclude Include="ImgEdit_UI\IEBezierCurve.h" />
+    <ClInclude Include="ImgEdit_UI\LoadFromTWAIN.h" />
+    <ClInclude Include="ImgEdit_UI\Resource.h" />
+    <ClInclude Include="ImgEdit_UI\ViewCtrlPane.h" />
+    <ClInclude Include="resource1.h" />
+    <ClInclude Include="ImgEdit_UI\stdafx.h" />
+    <ClInclude Include="ImgEdit_UI\targetver.h" />
+    <ClInclude Include="ImgEdit_UI\LayerAlphaEdit.h" />
+    <ClInclude Include="ImgEdit_UI\LayerCtrl.h" />
+    <ClInclude Include="ImgEdit_UI\LayerFrame.h" />
+    <ClInclude Include="ImgEdit_UI\LayerGroupPanel.h" />
+    <ClInclude Include="ImgEdit_UI\LayerLockState.h" />
+    <ClInclude Include="ImgEdit_UI\LayerNameEdit.h" />
+    <ClInclude Include="ImgEdit_UI\LayerPanel.h" />
+    <ClInclude Include="ImgEdit_UI\LayerWnd.h" />
+    <ClInclude Include="ImgEdit_UI\BrushPanel.h" />
+    <ClInclude Include="ImgEdit_UI\BrushPreviewFrame.h" />
+    <ClInclude Include="ImgEdit_UI\BrushSelectFrame.h" />
+    <ClInclude Include="ImgEdit_UI\BrushSelectWnd.h" />
+    <ClInclude Include="ImgEdit_UI\ToolButton.h" />
+    <ClInclude Include="ImgEdit_UI\ToolFrame.h" />
+    <ClInclude Include="ImgEdit_UI\ToolPopupPanel.h" />
+    <ClInclude Include="ImgEdit_UI\ToolWnd.h" />
+    <ClInclude Include="ImgEdit_UI\EffectTreeWnd.h" />
+    <ClInclude Include="ImgEdit_UI\FileSizeScroll.h" />
+    <ClInclude Include="ImgEdit_UI\NavigatorWnd.h" />
+    <ClInclude Include="ImgEdit_UI\PreviewFrame.h" />
+    <ClInclude Include="ImgEdit_UI\ToolEditFrame.h" />
+    <ClInclude Include="ImgEdit_UI\ToolEditWnd.h" />
+    <ClInclude Include="ImgEdit_UI\HistoryFrame.h" />
+    <ClInclude Include="ImgEdit_UI\HistoryWnd.h" />
+    <ClInclude Include="ImgEdit_UI\MaskCtrl.h" />
+    <ClInclude Include="ImgEdit_UI\MaskFrame.h" />
+    <ClInclude Include="ImgEdit_UI\MaskPanel.h" />
+    <ClInclude Include="ImgEdit_UI\MaskWnd.h" />
+    <ClInclude Include="ImgEdit_UI\PaletteCtrlPane.h" />
+    <ClInclude Include="ImgEdit_UI\PaletteFrame.h" />
+    <ClInclude Include="ImgEdit_UI\PaletteWnd.h" />
+    <ClInclude Include="ImgEdit_UI\RGBSliderFrame.h" />
+    <ClInclude Include="ImgEdit_UI\RGBSliderWnd.h" />
+    <ClInclude Include="ImgEdit_UI\HSVCircleFrame.h" />
+    <ClInclude Include="ImgEdit_UI\HSVCircleWnd.h" />
+    <ClInclude Include="ImgEdit_UI\EditSliderCtrl.h" />
+    <ClInclude Include="ImgEdit_UI\FileDialogExt.h" />
+    <ClInclude Include="ImgEdit_UI\HoverBitmapButton.h" />
+    <ClInclude Include="ImgEdit_UI\LabelComboBox.h" />
+    <ClInclude Include="ImgEdit_UI\ScrollWnd.h" />
+    <ClInclude Include="ImgEdit_UI\BrushPopupWnd.h" />
+    <ClInclude Include="ImgEdit_UI\CreateNewFileDialog.h" />
+    <ClInclude Include="ImgEdit_UI\IE_EffectEditDialog.h" />
+    <ClInclude Include="ImgEdit_UI\LayerStyleDialog.h" />
+    <ClInclude Include="ImgEdit_UI\NewPaletteColorDialog.h" />
+    <ClInclude Include="ImgEdit_UI\IEConfig_Environment.h" />
+    <ClInclude Include="ImgEdit_UI\IEConfig_InputRevise.h" />
+    <ClInclude Include="ImgEdit_UI\IEConfig_Shortcut.h" />
+    <ClInclude Include="ImgEdit_UI\IEConfig_ToolShift.h" />
+    <ClInclude Include="ImgEdit_UI\IEConfigDialog.h" />
+    <ClInclude Include="ImgEdit_UI\IIEConfig_DialogComponent.h" />
+    <ClInclude Include="ImgEdit_UI\BrushBaseParamTabDialog.h" />
+    <ClInclude Include="ImgEdit_UI\IEEMBrushEditDialog.h" />
+    <ClInclude Include="ImgEdit_UI\ChildFrm.h" />
+    <ClInclude Include="ImgEdit_UI\ImgEdit_UI.h" />
+    <ClInclude Include="ImgEdit_UI\ImgEdit_UIDoc.h" />
+    <ClInclude Include="ImgEdit_UI\ImgEdit_UIView.h" />
+    <ClInclude Include="ImgEdit_UI\InputPointDevice.h" />
+    <ClInclude Include="ImgEdit_UI\MainFrm.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resorce\layer_group_panel\close_layer_group.bmp" />
+    <None Include="resorce\eye18x18.bmp" />
+    <None Include="ImgEdit_UI\res\ImgEdit_UI.ico" />
+    <None Include="ImgEdit_UI\res\ImgEdit_UIDoc.ico" />
+    <None Include="resorce\lock_layer_alpha\lock_layer_alpha_btn_a.bmp" />
+    <None Include="resorce\lock_layer_alpha\lock_layer_alpha_btn_b.bmp" />
+    <None Include="resorce\lock_layer_alpha\lock_layer_alpha_btn_c.bmp" />
+    <None Include="resorce\neye18x18.bmp" />
+    <None Include="resorce\layer_group_panel\open_layer_group.bmp" />
+    <None Include="resorce\toggle_color_circle_btn\toggle_color_circle_btn_a.bmp" />
+    <None Include="resorce\toggle_color_circle_btn\toggle_color_circle_btn_b.bmp" />
+    <None Include="resorce\toggle_color_circle_btn\toggle_color_circle_btn_c.bmp" />
+    <None Include="resorce\toggle_color_slider_btn\toggle_color_slider_btn_a.bmp" />
+    <None Include="resorce\toggle_color_slider_btn\toggle_color_slider_btn_b.bmp" />
+    <None Include="resorce\toggle_color_slider_btn\toggle_color_slider_btn_c.bmp" />
+    <None Include="ImgEdit_UI\res\Toolbar.bmp" />
+    <None Include="ImgEdit_UI\res\Toolbar256.bmp" />
+    <None Include="resorce\view_flip_h_btn\view_flip_h_btn_a.bmp" />
+    <None Include="resorce\view_flip_h_btn\view_flip_h_btn_b.bmp" />
+    <None Include="resorce\view_flip_h_btn\view_flip_h_btn_c.bmp" />
+    <None Include="resorce\view_flip_v_btn\view_flip_v_btn_a.bmp" />
+    <None Include="resorce\view_flip_v_btn\view_flip_v_btn_b.bmp" />
+    <None Include="resorce\view_flip_v_btn\view_flip_v_btn_c.bmp" />
+    <None Include="resorce\view_left_rot_btn\view_left_rot_btn_a.bmp" />
+    <None Include="resorce\view_left_rot_btn\view_left_rot_btn_b.bmp" />
+    <None Include="resorce\view_left_rot_btn\view_left_rot_btn_c.bmp" />
+    <None Include="resorce\view_right_rot_btn\view_right_rot_btn_a.bmp" />
+    <None Include="resorce\view_right_rot_btn\view_right_rot_btn_b.bmp" />
+    <None Include="resorce\view_right_rot_btn\view_right_rot_btn_c.bmp" />
+    <None Include="UserImages.bmp" />
+    <None Include="resorce\new_layer_btn\newlayer_a.bmp" />
+    <None Include="resorce\new_layer_btn\newlayer_b.bmp" />
+    <None Include="resorce\new_layer_btn\newlayer_c.bmp" />
+    <None Include="resorce\delete_layer_btn\deletelayer_a.bmp" />
+    <None Include="resorce\delete_layer_btn\deletelayer_b.bmp" />
+    <None Include="resorce\delete_layer_btn\deletelayer_c.bmp" />
+    <None Include="resorce\left_btn\left_a.bmp" />
+    <None Include="resorce\left_btn\left_b.bmp" />
+    <None Include="resorce\left_btn\left_c.bmp" />
+    <None Include="resorce\right_btn\right_a.bmp" />
+    <None Include="resorce\right_btn\right_b.bmp" />
+    <None Include="resorce\right_btn\right_c.bmp" />
+    <None Include="resorce\new_layer_group_btn\newlayergroup_a.bmp" />
+    <None Include="resorce\new_layer_group_btn\newlayergroup_b.bmp" />
+    <None Include="resorce\new_layer_group_btn\newlayergroup_c.bmp" />
+    <None Include="resorce\delete_palette_color_btn\delete_palette_color_btn_a.bmp" />
+    <None Include="resorce\delete_palette_color_btn\delete_palette_color_btn_b.bmp" />
+    <None Include="resorce\delete_palette_color_btn\delete_palette_color_btn_c.bmp" />
+    <None Include="resorce\new_palette_color_btn\new_palette_color_btn_a.bmp" />
+    <None Include="resorce\new_palette_color_btn\new_palette_color_btn_b.bmp" />
+    <None Include="resorce\new_palette_color_btn\new_palette_color_btn_c.bmp" />
+    <None Include="..\ImgEditPropertySheet.vsprops" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ImgEdit_UI\ImgEdit_UI.rc" />
+    <ResourceCompile Include="wind.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\libImgEdit\libImgEdit\libImgEdit.vcxproj">
+      <Project>{a4769dc9-7d0e-4c7f-b65d-09004eaaff71}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="wind.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

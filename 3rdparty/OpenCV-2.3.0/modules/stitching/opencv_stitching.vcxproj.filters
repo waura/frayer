@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="autocalib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="blenders.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="exposure_compensate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="matchers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="motion_estimators.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="precomp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="seam_finders.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="warpers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{27E38C92-B030-4485-996B-F2A57F0B85C2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{CCE10BB2-1866-4CD9-B464-291B91B641B9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="autocalib.hpp">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="blenders.hpp">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="exposure_compensate.hpp">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="matchers.hpp">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="motion_estimators.hpp">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="precomp.hpp">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="seam_finders.hpp">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="util.hpp">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="util_inl.hpp">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="warpers.hpp">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="warpers_inl.hpp">
+      <Filter>Header Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

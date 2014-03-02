@@ -1,0 +1,36 @@
+[4byte] signature "FFRY"
+[2byte] ファイルフォーマットメジャーバージョン
+[2byte] ファイルフォーマットサブバージョン
+[2byte] チャンネル数
+[4byte] ファイル高さ
+[4byte] ファイル幅
+[2byte] 画素深度
+[2byte] ファイルモード
+[8byte] 予約領域
+[4byte] レイヤーブロック長さ
+[2byte] レイヤー数
+レイヤー数分繰り返し
+	[4byte] レイヤー上端位置
+	[4byte] レイヤー左端位置
+	[4byte] レイヤー下端位置
+	[4byte] レイヤー右端位置
+	[2byte] レイヤーチャンネル数
+	レイヤーチャンネル数分繰り返し
+		[2byte] チャンネルID
+		...
+	[4byte] ブレンドモード
+	[1byte] opacity
+	[1byte] clipping
+	[1byte] レイヤーフラグ
+	[1byte] レイヤー名バイト数
+	レイヤー名バイト数分のレイヤー名
+	...
+レイヤー数分繰り返し
+	レイヤーチャンネル数分繰り返し
+	[2byte] compression
+	if(compression = 1)
+		レイヤー高さ分繰り返し
+		[2byte] rle長さ
+		...
+	[......] channel pixel data
+	...

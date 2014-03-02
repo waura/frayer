@@ -1,0 +1,370 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A4769DC9-7D0E-4C7F-B65D-09004EAAFF71}</ProjectGuid>
+    <RootNamespace>libImgEdit</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\include;..\..\UtilOpenCV\include;..\..\3rdparty\OpenCV-2.3.0\include;..\..\3rdparty\tinyxml;..\..\3rdparty\babel;..\..\3rdparty\glog-0.3.1\src\windows;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;_COMPILE_LIB_IMGEDIT_DLL;GOOGLE_GLOG_DLL_DECL=;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <SmallerTypeCheck>false</SmallerTypeCheck>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ProgramDataBaseFileName>$(IntDir)vc90.pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libglog_static.lib;vfw32.lib;tinyxml.lib;zlib.lib;libjasper.lib;libjpeg.lib;libpng.lib;libtiff.lib;opencv_calib3d.lib;opencv_contrib.lib;opencv_core.lib;opencv_features2d.lib;opencv_flann.lib;opencv_highgui.lib;opencv_imgproc.lib;opencv_legacy.lib;opencv_ml.lib;opencv_objdetect.lib;winmm.lib;comctl32.lib;imagehlp.lib;shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\3rdparty\OpenCV-2.3.0\3rdparty\lib\$(Platform)\$(Configuration);..\..\3rdparty\OpenCV-2.3.0\lib\$(Platform)\$(Configuration);..\..\3rdparty\glog-0.3.1\$(Platform)\$(Configuration);..\..\3rdparty\tinyxml\$(Platform)\$(Configuration);..\..\UtilOpenCV\$(Platform)\Debug DLL;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>atlthunk.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(ProjectDir)..\$(Platform)\$(Configuration)\$(ProjectName).dll" "$(ProjectDir)..\..\$(Platform)\$(Configuration)
+copy "$(ProjectDir)..\$(Platform)\$(Configuration)\$(ProjectName).pdb" "$(ProjectDir)..\..\$(Platform)\$(Configuration)
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\include;..\..\UtilOpenCV\include;..\..\3rdparty\OpenCV-2.3.0\include;..\..\3rdparty\tinyxml;..\..\3rdparty\babel;..\..\3rdparty\glog-0.3.1\src\windows;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;EM64T;_DEBUG;_WINDOWS;_USRDLL;_COMPILE_LIB_IMGEDIT_DLL;GOOGLE_GLOG_DLL_DECL=;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <SmallerTypeCheck>false</SmallerTypeCheck>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libglog_static.lib;vfw32.lib;tinyxml.lib;zlib.lib;libjasper.lib;libjpeg.lib;libpng.lib;libtiff.lib;opencv_calib3d.lib;opencv_contrib.lib;opencv_core.lib;opencv_features2d.lib;opencv_flann.lib;opencv_highgui.lib;opencv_imgproc.lib;opencv_legacy.lib;opencv_ml.lib;opencv_objdetect.lib;winmm.lib;comctl32.lib;imagehlp.lib;shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\3rdparty\OpenCV-2.3.0\3rdparty\lib\$(Platform)\$(Configuration);..\..\3rdparty\OpenCV-2.3.0\lib\$(Platform)\$(Configuration);..\..\3rdparty\glog-0.3.1\$(Platform)\$(Configuration);..\..\3rdparty\tinyxml\$(Platform)\$(Configuration);..\..\UtilOpenCV\$(Platform)\Debug DLL;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>atlthunk.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(ProjectDir)..\$(Platform)\$(Configuration)\$(ProjectName).dll" "$(ProjectDir)..\..\$(Platform)\$(Configuration)
+copy "$(ProjectDir)..\$(Platform)\$(Configuration)\$(ProjectName).pdb" "$(ProjectDir)..\..\$(Platform)\$(Configuration)
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>..\include;..\..\UtilOpenCV\include;..\..\3rdparty\OpenCV-2.3.0\include;..\..\3rdparty\tinyxml;..\..\3rdparty\babel;..\..\3rdparty\glog-0.3.1\src\windows;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;_COMPILE_LIB_IMGEDIT_DLL;GOOGLE_GLOG_DLL_DECL=;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libglog_static.lib;vfw32.lib;tinyxml.lib;zlib.lib;libjasper.lib;libjpeg.lib;libpng.lib;libtiff.lib;opencv_calib3d.lib;opencv_contrib.lib;opencv_core.lib;opencv_features2d.lib;opencv_flann.lib;opencv_highgui.lib;opencv_imgproc.lib;opencv_legacy.lib;opencv_ml.lib;opencv_objdetect.lib;winmm.lib;comctl32.lib;imagehlp.lib;shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\3rdparty\OpenCV-2.3.0\3rdparty\lib\$(Platform)\$(Configuration);..\..\3rdparty\OpenCV-2.3.0\lib\$(Platform)\$(Configuration);..\..\3rdparty\glog-0.3.1\$(Platform)\$(Configuration);..\..\3rdparty\tinyxml\$(Platform)\$(Configuration);..\..\UtilOpenCV\$(Platform)\Release DLL;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>atlthunk.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(ProjectDir)..\$(Platform)\$(Configuration)\$(ProjectName).dll" "$(ProjectDir)..\..\$(Platform)\$(Configuration)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>..\include;..\..\UtilOpenCV\include;..\..\3rdparty\OpenCV-2.3.0\include;..\..\3rdparty\tinyxml;..\..\3rdparty\babel;..\..\3rdparty\glog-0.3.1\src\windows;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;EM64T;NDEBUG;_WINDOWS;_USRDLL;_COMPILE_LIB_IMGEDIT_DLL;GOOGLE_GLOG_DLL_DECL=;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AssemblerOutput>AssemblyAndSourceCode</AssemblerOutput>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libglog_static.lib;vfw32.lib;tinyxml.lib;zlib.lib;libjasper.lib;libjpeg.lib;libpng.lib;libtiff.lib;opencv_calib3d.lib;opencv_contrib.lib;opencv_core.lib;opencv_features2d.lib;opencv_flann.lib;opencv_highgui.lib;opencv_imgproc.lib;opencv_legacy.lib;opencv_ml.lib;opencv_objdetect.lib;winmm.lib;comctl32.lib;imagehlp.lib;shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\3rdparty\OpenCV-2.3.0\3rdparty\lib\$(Platform)\$(Configuration);..\..\3rdparty\OpenCV-2.3.0\lib\$(Platform)\$(Configuration);..\..\3rdparty\glog-0.3.1\$(Platform)\$(Configuration);..\..\3rdparty\tinyxml\$(Platform)\$(Configuration);..\..\UtilOpenCV\$(Platform)\Release DLL;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>atlthunk.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(ProjectDir)..\$(Platform)\$(Configuration)\$(ProjectName).dll" "$(ProjectDir)..\..\$(Platform)\$(Configuration)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\3rdparty\babel\babel.cpp" />
+    <ClCompile Include="..\src\Base64.cpp" />
+    <ClCompile Include="..\src\IEBrushTextureMG.cpp" />
+    <ClCompile Include="..\src\IECoursorMG.cpp" />
+    <ClCompile Include="..\src\IEEventCapture.cpp" />
+    <ClCompile Include="..\src\IEFileIOCommon.cpp" />
+    <ClCompile Include="..\src\IEKeyMap.cpp" />
+    <ClCompile Include="..\src\IEMenuItemInfo.cpp" />
+    <ClCompile Include="..\src\IEMenuMG.cpp" />
+    <ClCompile Include="..\src\IEParamRegister.cpp" />
+    <ClCompile Include="..\src\IEStringHandle.cpp" />
+    <ClCompile Include="..\src\ImgEdit.cpp" />
+    <ClCompile Include="..\src\ImgEditConfig.cpp" />
+    <ClCompile Include="..\src\libImgEdit.cpp" />
+    <ClCompile Include="..\src\RLE.cpp" />
+    <ClCompile Include="..\src\stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\src\IEBrush.cpp" />
+    <ClCompile Include="..\src\IEBrushGruop.cpp" />
+    <ClCompile Include="..\src\IEBrushIO.cpp" />
+    <ClCompile Include="..\src\IEBrushMG.cpp" />
+    <ClCompile Include="..\src\IEEMBrush.cpp" />
+    <ClCompile Include="IEImgBrush.cpp" />
+    <ClCompile Include="..\src\IImgLayer.cpp" />
+    <ClCompile Include="..\src\ImgFile.cpp" />
+    <ClCompile Include="..\src\ImgLayer.cpp" />
+    <ClCompile Include="..\src\ImgLayerGroup.cpp" />
+    <ClCompile Include="..\src\ImgMask.cpp" />
+    <ClCompile Include="..\src\IEffect.cpp" />
+    <ClCompile Include="..\src\OutputError.cpp" />
+    <ClCompile Include="..\src\IIETool.cpp" />
+    <ClCompile Include="..\src\ILayerSynthesizer.cpp" />
+    <ClCompile Include="..\src\LoadFydFile.cpp" />
+    <ClCompile Include="..\src\SaveFydFile.cpp" />
+    <ClCompile Include="..\src\LayerSynthesizerMG.cpp" />
+    <ClCompile Include="..\src\IInputRevise.cpp" />
+    <ClCompile Include="..\src\InputGaussianRevise.cpp" />
+    <ClCompile Include="..\src\InputMovingAverageRevise.cpp" />
+    <ClCompile Include="..\src\InputNoRevise.cpp" />
+    <ClCompile Include="..\src\InputReviseMG.cpp" />
+    <ClCompile Include="..\src\AddCopyLayerHandle.cpp" />
+    <ClCompile Include="..\src\AddNewLayerGroupHandle.cpp" />
+    <ClCompile Include="..\src\AddNewLayerHandle.cpp" />
+    <ClCompile Include="..\src\AddNewMaskHandle.cpp" />
+    <ClCompile Include="..\src\ChangeCanvasSizeHandle.cpp" />
+    <ClCompile Include="..\src\ChangeResolutionHandle.cpp" />
+    <ClCompile Include="..\src\EditLayerHandle.cpp" />
+    <ClCompile Include="..\src\ImgFileHandleMG.cpp" />
+    <ClCompile Include="..\src\MergeLayerHandle.cpp" />
+    <ClCompile Include="..\src\RemoveLayerHandle.cpp" />
+    <ClCompile Include="..\src\SetLayerNameHandle.cpp" />
+    <ClCompile Include="..\src\StackHandle.cpp" />
+    <ClCompile Include="..\src\MaskSynthesizerMG.cpp" />
+    <ClCompile Include="..\src\EffectMG.cpp" />
+    <ClCompile Include="..\src\IECommandMG.cpp" />
+    <ClCompile Include="..\src\ImgFileIOMG.cpp" />
+    <ClCompile Include="..\src\IEPalette.cpp" />
+    <ClCompile Include="..\src\IEPaletteMG.cpp" />
+    <ClCompile Include="..\src\IEToolGroup.cpp" />
+    <ClCompile Include="..\src\IEToolMG.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\3rdparty\babel\babel.h" />
+    <ClInclude Include="..\include\AddCopyLayerHandle.h" />
+    <ClInclude Include="..\include\AddMaskSynthesizer.h" />
+    <ClInclude Include="..\include\AddNewLayerGroupHandle.h" />
+    <ClInclude Include="..\include\AddNewLayerHandle.h" />
+    <ClInclude Include="..\include\AddNewMaskHandle.h" />
+    <ClInclude Include="..\include\AlphaMaskLayerSynthesizer.h" />
+    <ClInclude Include="..\include\Base64.h" />
+    <ClInclude Include="..\include\BurnLayerSynthesizer.h" />
+    <ClInclude Include="..\include\ChangeCanvasSizeHandle.h" />
+    <ClInclude Include="..\include\ChangeLayerLineHandle.h" />
+    <ClInclude Include="..\include\ChangeLayerOpacityHandle.h" />
+    <ClInclude Include="..\include\ChangeLayerSynthFourCCHandle.h" />
+    <ClInclude Include="..\include\ChangeResolutionHandle.h" />
+    <ClInclude Include="..\include\CopyMaskSynthesizer.h" />
+    <ClInclude Include="..\include\DarkenLayerSynthesizer.h" />
+    <ClInclude Include="..\include\DifferenceLayerSynthesizer.h" />
+    <ClInclude Include="..\include\DodgeLayerSynthesizer.h" />
+    <ClInclude Include="..\include\EditLayerHandle.h" />
+    <ClInclude Include="..\include\EditMaskHandle.h" />
+    <ClInclude Include="..\include\EditNode.h" />
+    <ClInclude Include="..\include\EffectMG.h" />
+    <ClInclude Include="..\include\HardlightLayerSynthesizer.h" />
+    <ClInclude Include="..\include\IEBrush.h" />
+    <ClInclude Include="..\include\IEBrushEventListener.h" />
+    <ClInclude Include="..\include\IEBrushGroup.h" />
+    <ClInclude Include="..\include\IEBrushGroupEventListener.h" />
+    <ClInclude Include="..\include\IEBrushIO.h" />
+    <ClInclude Include="..\include\IEBrushMG.h" />
+    <ClInclude Include="..\include\IEBrushMGEventListener.h" />
+    <ClInclude Include="..\include\IEBrushTextureMG.h" />
+    <ClInclude Include="..\include\IEColor.h" />
+    <ClInclude Include="..\include\IECommandMG.h" />
+    <ClInclude Include="..\include\IECoursorMG.h" />
+    <ClInclude Include="..\include\IEditNode.h" />
+    <ClInclude Include="..\include\IEEMBrush.h" />
+    <ClInclude Include="..\include\IEEventCapture.h" />
+    <ClInclude Include="..\include\IEffect.h" />
+    <ClInclude Include="..\include\IEffectEditDialog.h" />
+    <ClInclude Include="..\include\IEFileIOCommon.h" />
+    <ClInclude Include="..\include\IEKeyCord.h" />
+    <ClInclude Include="..\include\IEKeyMap.h" />
+    <ClInclude Include="..\include\IEMenuItemInfo.h" />
+    <ClInclude Include="..\include\IEMenuMG.h" />
+    <ClInclude Include="..\include\IEModules.h" />
+    <ClInclude Include="..\include\IEPalette.h" />
+    <ClInclude Include="..\include\IEPaletteEventListener.h" />
+    <ClInclude Include="..\include\IEPaletteMG.h" />
+    <ClInclude Include="..\include\IEPaletteMGEventListener.h" />
+    <ClInclude Include="..\include\IEParamRegister.h" />
+    <ClInclude Include="..\include\IEStringHandle.h" />
+    <ClInclude Include="..\include\IETimer.h" />
+    <ClInclude Include="..\include\IEToolGroup.h" />
+    <ClInclude Include="..\include\IEToolMG.h" />
+    <ClInclude Include="..\include\IEToolMGEventListener.h" />
+    <ClInclude Include="..\include\IIEBrushPopupWnd.h" />
+    <ClInclude Include="..\include\IIECommand.h" />
+    <ClInclude Include="..\include\IIEGuiFrame.h" />
+    <ClInclude Include="..\include\IIETool.h" />
+    <ClInclude Include="..\include\IImgLayer.h" />
+    <ClInclude Include="..\include\IInputRevise.h" />
+    <ClInclude Include="..\include\ILayerSynthesizer.h" />
+    <ClInclude Include="..\include\IMaskSynthesizer.h" />
+    <ClInclude Include="..\include\ImgEdit.h" />
+    <ClInclude Include="..\include\ImgEditConfig.h" />
+    <ClInclude Include="..\include\ImgEditEventListener.h" />
+    <ClInclude Include="..\include\ImgFile.h" />
+    <ClInclude Include="..\include\ImgFileEventListener.h" />
+    <ClInclude Include="..\include\ImgFileHandle.h" />
+    <ClInclude Include="..\include\ImgFileHandleMG.h" />
+    <ClInclude Include="..\include\ImgFileIOMG.h" />
+    <ClInclude Include="..\include\ImgLayer.h" />
+    <ClInclude Include="..\include\ImgLayerEventListener.h" />
+    <ClInclude Include="..\include\ImgLayerGroup.h" />
+    <ClInclude Include="..\include\ImgMask.h" />
+    <ClInclude Include="..\include\ImgUpdateData.h" />
+    <ClInclude Include="..\include\InputData.h" />
+    <ClInclude Include="..\include\InputGaussianRevise.h" />
+    <ClInclude Include="..\include\InputMovingAverageRevise.h" />
+    <ClInclude Include="..\include\InputNoRevise.h" />
+    <ClInclude Include="..\include\InputReviseMG.h" />
+    <ClInclude Include="..\include\IToolEditWndHandle.h" />
+    <ClInclude Include="..\include\LayerSynthesizerMG.h" />
+    <ClInclude Include="..\include\LibIEDllHeader.h" />
+    <ClInclude Include="..\include\libImgEdit.h" />
+    <ClInclude Include="..\include\LightenLayerSynthesizer.h" />
+    <ClInclude Include="..\include\MaskSynthesizerMG.h" />
+    <ClInclude Include="..\include\MergeLayerHandle.h" />
+    <ClInclude Include="..\include\MoveLayerHandle.h" />
+    <ClInclude Include="..\include\MultLayerSynthesizer.h" />
+    <ClInclude Include="..\include\NormalLayerSynthesizer.h" />
+    <ClInclude Include="..\include\NullHandle.h" />
+    <ClInclude Include="..\include\OrMaskSynthesizer.h" />
+    <ClInclude Include="..\include\OutputError.h" />
+    <ClInclude Include="..\include\OverlayLayerSynthesizer.h" />
+    <ClInclude Include="..\include\RemoveLayerHandle.h" />
+    <ClInclude Include="..\include\RLE.h" />
+    <ClInclude Include="..\include\ScreenLayerSynthesizer.h" />
+    <ClInclude Include="..\include\SetLayerNameHandle.h" />
+    <ClInclude Include="..\include\SoftlightLayerSynthesizer.h" />
+    <ClInclude Include="..\include\StackHandle.h" />
+    <ClInclude Include="..\include\stdafx.h" />
+    <ClInclude Include="..\include\SubALayerSynthesizer.h" />
+    <ClInclude Include="..\include\SubMaskSynthesizer.h" />
+    <ClInclude Include="..\..\ImgEdit_UI\resource1.h" />
+    <ClInclude Include="..\inlcude\IEImgBrush.h" />
+    <ClInclude Include="..\inlcude\IEIOfyd.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\UtilOpenCV\UtilOpenCV\UtilOpenCV.vcxproj">
+      <Project>{e8904be0-f438-408d-a7f7-bf93c6635da8}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
